@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://leecuongv.github.io/lvc-portfolio",
+  "homepage": "https://leecuongv.github.io/lvc-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

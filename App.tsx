@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import SkillsSection from './components/SkillsSection';
-import ExperienceSection from './components/ExperienceSection';
-import ProjectsSection from './components/ProjectsSection';
-import CertificatesSection from './components/CertificatesSection';
-import HonorsAndAwardsSection from './components/HonorsAndAwardsSection';
-import Footer from './components/Footer';
+import Header from './src/components/Header';
+import HeroSection from './src/components/HeroSection';
+import AboutSection from './src/components/AboutSection';
+import SkillsSection from './src/components/SkillsSection';
+import ExperienceSection from './src/components/ExperienceSection';
+import ProjectsSection from './src/components/ProjectsSection';
+import CertificatesSection from './src/components/CertificatesSection';
+import HonorsAndAwardsSection from './src/components/HonorsAndAwardsSection';
+import Footer from './src/components/Footer';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
