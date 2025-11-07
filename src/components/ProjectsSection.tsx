@@ -15,7 +15,9 @@ const ProjectsSection: React.FC = () => {
             <div key={project.title} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col group">
               <div className="p-6 flex-grow">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{project.title}</h3>
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-900 dark:text-white hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+                    <h3 className="text-2xl font-bold">{project.title} <i className="fas fa-external-link-alt text-xs ml-1"></i></h3>
+                  </a>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors text-2xl">
                     <i className="fab fa-github"></i>
                   </a>
