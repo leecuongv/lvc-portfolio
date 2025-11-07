@@ -21,6 +21,7 @@ export const SOFT_SKILLS = [
 ];
 
 export const LANGUAGES = [
+  "VietNamese",
   "English: TOEIC 615",
 ];
 
@@ -31,7 +32,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     title: "Database",
-    skills: ["SQL: MSSQL, OracleDB", "NoSQL: MongoDB, Firebase"],
+    skills: ["SQL: PostgreSQL, MSSQL, OracleDB", "NoSQL: MongoDB, Firebase"],
   },
   {
     title: "Source Control",
@@ -42,8 +43,8 @@ export const SKILLS: SkillCategory[] = [
     skills: ["Architecture: MVC, Three-tier"],
   },
   {
-    title: "Load Testing",
-    skills: ["Jmeter"],
+    title: "Testing",
+    skills: ["Jmeter", "Postman"],
   },
   {
     title: "Code Analysis Tools",
@@ -59,30 +60,42 @@ export const PROJECTS: Project[] = [
   {
     title: "Back-end Farm Management System",
     description: "A comprehensive back-end system for managing farm operations, including crop tracking, resource management, and data analytics.",
-    tags: ["Java", "Spring", "MongoDB", "RESTful API"],
-    githubUrl: "https://github.com/leecuongv",
+    tags: ["Java", "Spring", "MongoDB", "RESTful API", "JWT", "Swagger", "OAuth"],
+    githubUrl: "https://github.com/leecuongv/back-end-farm-managerment-system",
   },
   {
     title: "Back-end Only Examination System",
     description: "A back-end only system for managing online examinations, including user management, exam creation, and result processing.",
     tags: ["Node.js", "Express", "MongoDB", "RESTful API", "Axios"],
-    githubUrl: "https://github.com/leecuongv",
+    githubUrl: "https://github.com/leecuongv/BE_Online_Examination_System",
   },
   {
     title: "Realtime Mark Detection",
     description: "Realtime mark detection is a python project for detecting marks in real-time using computer vision techniques.",
     tags: ["Python", "OpenCV", "TensorFlow"],
-    githubUrl: "https://github.com/leecuongv",
+    githubUrl: "https://github.com/leecuongv/RealtimeMaskDetection",
   },
   {
     title: "Hotel Management System",
     description: "Hotel Management System is a Windows application that allows hotel staff to manage bookings, check-ins, and check-outs efficiently.",
     tags: ["Windows Forms", "C#"],
-    githubUrl: "https://github.com/leecuongv",
+    githubUrl: "https://github.com/leecuongv/Hotel-Managerment-System",
   },
 ];
 
 export const EXPERIENCES: Experience[] = [
+  {
+    role: "Java Software Developer",
+    company: "Fahasa",
+    period: "09/2024 - Now",
+    description: [
+      "Developed backend services using Java and Spring Framework to build RESTful APIs, Web APIs.",
+      "Utilized Object-Oriented Programming (OOP) principles and Design Patterns (Singleton, Factory) for solution design.",
+      "Designed, implemented, and optimized relational databases (MySQL, PostgreSQL); proficient in writing SQL queries and applying the MVC architecture.",
+      "Proactively solved problems and worked independently; utilized Docker for application containerization and deployment.",
+      "Participated in diverse projects, proactively researching and adopting new technologies such as Node.js."
+    ],
+  },
   {
     role: "Java Software Developer",
     company: "HPT Vietnam Corporation",
@@ -133,7 +146,7 @@ const honorsAndAwardsData: Honor[] = [
     title: "Student with 5 Merits (School Level)",
     period: "2021",
     context:  "Student with 5 Merits (School Level) - Academic Year 2020-2021",
-    proofUrl: "#",
+    proofUrl: "",
   },
   {
     icon: 'fas fa-star',
@@ -147,21 +160,21 @@ const honorsAndAwardsData: Honor[] = [
     title: "Executive Committee Member",
     period: "2022",
     context: "Outstanding Union-Association Officer of the Faculty - 2022",
-    proofUrl: "#",
+    proofUrl: "https://www.facebook.com/photo/?fbid=3386772624886535&set=a.1467109430186207",
   },
   {
     icon: 'fas fa-star',
     title: "Student with 5 Merits (School Level)",
     period: "2022",
     context: "Student with 5 Merits (School Level) - Academic Year 2021-2022",
-    proofUrl: "#",
+    proofUrl: "https://www.facebook.com/photo.php?fbid=593807556107946&id=100064361214701&set=a.593813909440644",
   },
   {
     icon: 'fas fa-star',
     title: "Student with 5 Merits for three consecutive years (School Level)",
     period: "2023",
     context: "Student with 5 Merits for three consecutive years (School Level) - Academic Year 2021-2023",
-    proofUrl: "#",
+    proofUrl: "https://www.facebook.com/photo.php?fbid=376776481668342&id=100080079805690&set=a.353115687367755",
   },
   {
     icon: 'fas fa-star',
