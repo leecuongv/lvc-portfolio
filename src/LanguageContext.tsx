@@ -100,7 +100,7 @@ const uiTranslations = {
     skillsTitle: "Kỹ năng chuyên môn",
     
     // Experience & Education
-    experienceTitle: "Kinh nghiệm & Học văn",
+    experienceTitle: "Kinh nghiệm & Học vấn",
     
     // Projects
     projectsTitle: "Dự án cá nhân",
