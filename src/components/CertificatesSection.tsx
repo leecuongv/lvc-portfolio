@@ -1,17 +1,19 @@
 import React from 'react';
-import { CERTIFICATES } from '../constants';
+import { useLanguage } from '../LanguageContext';
 
 const CertificatesSection: React.FC = () => {
+  const { certificates, t } = useLanguage();
+
   return (
     <section id="certificates" className="py-20 bg-gray-100 dark:bg-gray-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Certificates</h2>
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">{t('certificatesTitle')}</h2>
           <div className="mt-2 w-24 h-1 bg-primary-500 mx-auto"></div>
         </div>
         <div className="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
             <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-                {CERTIFICATES.map((cert, index) => (
+                {certificates.map((cert, index) => (
                     <li key={index} className="py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
                         <div>
                             <h3 className="text-lg font-bold text-gray-900 dark:text-white">

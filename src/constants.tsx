@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
   name: "CƯỜNG LÊ VĂN",
   title: "Software Engineer",
   objective: "Contributing to the development and success of the company where I work & Strive to become a senior developer in the future.",
-  email: "vancuongle65@gmail.com",
+  email: "cuonglevan.work@gmail.com",
   phone: "+84 389 365 835",
   github: "https://github.com/leecuongv",
   linkedin: "https://linkedin.com/in/leecuongv",

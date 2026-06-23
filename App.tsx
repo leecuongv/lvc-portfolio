@@ -9,6 +9,7 @@ import ProjectsSection from './src/components/ProjectsSection';
 import CertificatesSection from './src/components/CertificatesSection';
 import HonorsAndAwardsSection from './src/components/HonorsAndAwardsSection';
 import Footer from './src/components/Footer';
+import { LanguageProvider } from './src/LanguageContext';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -27,21 +28,23 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="text-gray-800 dark:text-gray-200 transition-colors duration-300">
-      <Header theme={theme} onThemeSwitch={handleThemeSwitch} />
-      <main className="pt-20">
-        <div id="home" className="min-h-screen flex items-center">
-            <HeroSection />
-        </div>
-        <AboutSection />
-        <SkillsSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <CertificatesSection />
-        <HonorsAndAwardsSection />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="text-gray-800 dark:text-gray-200 transition-colors duration-300">
+        <Header theme={theme} onThemeSwitch={handleThemeSwitch} />
+        <main className="pt-20">
+          <div id="home" className="min-h-screen flex items-center">
+              <HeroSection />
+          </div>
+          <AboutSection />
+          <SkillsSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <CertificatesSection />
+          <HonorsAndAwardsSection />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 };
 

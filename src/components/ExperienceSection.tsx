@@ -1,13 +1,14 @@
-
 import React from 'react';
-import { EXPERIENCES, EDUCATION } from '../constants';
+import { useLanguage } from '../LanguageContext';
 
 const ExperienceSection: React.FC = () => {
+  const { experiences, education, t } = useLanguage();
+
   return (
     <section id="experience" className="py-20 bg-gray-100 dark:bg-gray-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Experience & Education</h2>
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">{t('experienceTitle')}</h2>
           <div className="mt-2 w-24 h-1 bg-primary-500 mx-auto"></div>
         </div>
         
@@ -16,7 +17,7 @@ const ExperienceSection: React.FC = () => {
           <div className="hidden md:block absolute w-0.5 h-full bg-primary-300 dark:bg-primary-700 left-1/2 transform -translate-x-1/2"></div>
 
           {/* Experience */}
-          {EXPERIENCES.map((exp, index) => (
+          {experiences.map((exp, index) => (
             <div key={index} className={`mb-8 flex md:justify-between items-center w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
               <div className="hidden md:block w-5/12"></div>
               <div className="hidden md:block z-10">
@@ -36,8 +37,8 @@ const ExperienceSection: React.FC = () => {
           ))}
 
           {/* Education */}
-          {EDUCATION.map((edu, index) => (
-            <div key={index} className={`mb-8 flex md:justify-between items-center w-full ${EXPERIENCES.length % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+          {education.map((edu, index) => (
+            <div key={index} className={`mb-8 flex md:justify-between items-center w-full ${experiences.length % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
               <div className="hidden md:block w-5/12"></div>
               <div className="hidden md:block z-10">
                 <div className="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center text-white">

@@ -1,10 +1,9 @@
 import React from 'react';
-// Fix: Import HONORS_AND_AWARDS instead of non-existent AWARDS.
-import { HONORS_AND_AWARDS } from '../constants';
+import { useLanguage } from '../LanguageContext';
 
 const AwardsSection: React.FC = () => {
-  // Fix: Filter HONORS_AND_AWARDS to get only the awards.
-  const AWARDS = HONORS_AND_AWARDS.filter(item => item.icon === 'fas fa-award');
+  const { honorsAndAwards } = useLanguage();
+  const AWARDS = honorsAndAwards.filter(item => item.icon === 'fas fa-award');
   return (
     <section id="awards" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,10 +26,8 @@ const AwardsSection: React.FC = () => {
                 </div>
               </div>
               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 w-full md:w-5/12">
-                {/* Fix: Use 'period' instead of 'date' to match the data structure */}
                 <p className="text-sm font-semibold text-primary-500 dark:text-primary-400 mb-1">{award.period}</p>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">{award.title}</h3>
-                {/* Fix: Use 'context' instead of 'issuer' to match the data structure */}
                 <p className="text-md font-medium text-gray-500 dark:text-gray-400">{award.context}</p>
               </div>
             </div>

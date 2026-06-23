@@ -1,17 +1,18 @@
-
 import React from 'react';
-import { PROJECTS } from '../constants';
+import { useLanguage } from '../LanguageContext';
 
 const ProjectsSection: React.FC = () => {
+  const { projects, t } = useLanguage();
+
   return (
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Personal Projects</h2>
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">{t('projectsTitle')}</h2>
           <div className="mt-2 w-24 h-1 bg-primary-500 mx-auto"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {PROJECTS.map(project => (
+          {projects.map(project => (
             <div key={project.title} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col group">
               <div className="p-6 flex-grow">
                 <div className="flex justify-between items-start mb-2">
