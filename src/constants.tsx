@@ -21,7 +21,7 @@ export const SOFT_SKILLS = [
 ];
 
 export const LANGUAGES = [
-  "VietNamese",
+  "Vietnamese",
   "English: TOEIC 615",
 ];
 
@@ -70,8 +70,8 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/leecuongv/BE_Online_Examination_System",
   },
   {
-    title: "Realtime Mark Detection",
-    description: "Realtime mark detection is a python project for detecting marks in real-time using computer vision techniques.",
+    title: "Realtime Mask Detection",
+    description: "Realtime mask detection is a Python project for detecting masks in real-time using computer vision techniques.",
     tags: ["Python", "OpenCV", "TensorFlow"],
     githubUrl: "https://github.com/leecuongv/RealtimeMaskDetection",
   },

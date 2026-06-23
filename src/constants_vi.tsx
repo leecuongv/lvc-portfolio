@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Nhận diện khẩu trang thời gian thực",
-    description: "Nhận diện khẩu trang thời gian thực là một dự án Python nhằm phát hiện khẩu trang trong thời gian thực bằng cách sử dụng các kỹ thuật thị giác máy tính.",
+    description: "Dự án Python nhận diện khẩu trang trong thời gian thực bằng cách sử dụng các kỹ thuật thị giác máy tính.",
     tags: ["Python", "OpenCV", "TensorFlow"],
     githubUrl: "https://github.com/leecuongv/RealtimeMaskDetection",
   },
@@ -88,10 +88,10 @@ export const EXPERIENCES: Experience[] = [
     company: "Fahasa",
     period: "09/2024 - Hiện tại",
     description: [
-      "Phát triển các dịch vụ backend sử dụng Java và Spring Framework để xây dựng các RESTful API, Web API.",
+      "Phát triển các dịch vụ backend sử dụng Java và Spring Framework để xây dựng các RESTful API và Web API.",
       "Áp dụng các nguyên lý lập trình hướng đối tượng (OOP) và mẫu thiết kế (Singleton, Factory) cho thiết kế giải pháp.",
-      "Thiết kế, triển khai và tối ưu hóa cơ sở dữ liệu quan hệ (MySQL, PostgreSQL); thành thạo viết truy vấn SQL và áp dụng kiến trúc MVC.",
-      "Chủ động giải quyết vấn đề và làm việc độc lập; sử dụng Docker để đóng gói (containerize) và triển khai ứng dụng.",
+      "Thiết kế, triển khai và tối ưu hóa cơ sở dữ liệu quan hệ (MySQL, PostgreSQL); thành thạo viết truy vấn SQL và áp dụng mô hình kiến trúc MVC.",
+      "Chủ động giải quyết vấn đề và làm việc độc lập; sử dụng Docker để đóng gói ứng dụng (containerization) và triển khai ứng dụng.",
       "Tham gia vào nhiều dự án khác nhau, chủ động nghiên cứu và tiếp cận các công nghệ mới như Node.js."
     ],
   },
@@ -100,9 +100,9 @@ export const EXPERIENCES: Experience[] = [
     company: "HPT Vietnam Corporation",
     period: "10/2022 - 08/2024",
     description: [
-      "Phát triển hệ thống backend dựa trên Java để xử lý các logic nghiệp vụ, lưu trữ tài liệu/dữ liệu và tích hợp với các hệ thống backend khác như CoreBanking, IBM Integration Designer, Chữ ký số...",
+      "Phát triển hệ thống backend dựa trên Java để xử lý logic nghiệp vụ, lưu trữ tài liệu/dữ liệu và tích hợp với các hệ thống backend khác như CoreBanking, IBM Integration Designer, chữ ký số...",
       "Phân tích tài liệu yêu cầu nghiệp vụ, phối hợp với Chuyên viên phân tích nghiệp vụ (BA) để tư vấn, lựa chọn giải pháp và thiết kế kỹ thuật.",
-      "Tham gia các hoạt động nghiên cứu nội bộ để nâng cao kỹ năng chuyên môn và phát triển các sản phẩm mới cho các thị trường/dự án trong tương lai."
+      "Tham gia các hoạt động nghiên cứu nội bộ để nâng cao kỹ năng chuyên môn và phát triển các sản phẩm mới cho thị trường và dự án trong tương lai."
     ],
   },
   {
@@ -170,7 +170,7 @@ const honorsAndAwardsData: Honor[] = [
   },
   {
     icon: 'fas fa-star',
-    title: "Sinh viên 5 Tốt 3 năm liên tục (Cấp Trường)",
+    title: "Sinh viên 5 Tốt 3 năm liên tiếp (Cấp Trường)",
     period: "2023",
     context: "Sinh viên 5 Tốt 3 năm liên tiếp (Cấp Trường) - Năm học 2021-2023",
     proofUrl: "https://www.facebook.com/photo.php?fbid=376776481668342&id=100080079805690&set=a.353115687367755",
@@ -214,42 +214,42 @@ const honorsAndAwardsData: Honor[] = [
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2022",
-    context: "Thành viên Ban tổ chức cuộc thi học thuật: CV Contest",
+    context: "Thành viên Ban tổ chức các cuộc thi học thuật: CV Contest",
     proofUrl: "#",
   },
   {
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2021",
-    context: "Thành viên Ban tổ chức cuộc thi học thuật: English Contest 2",
+    context: "Thành viên Ban tổ chức các cuộc thi học thuật: English Contest 2",
     proofUrl: "#",
   },
   {
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2022",
-    context: "Thành viên Ban tổ chức cuộc thi học thuật: Capture The Flag 1",
+    context: "Thành viên Ban tổ chức các cuộc thi học thuật: Capture The Flag 1",
     proofUrl: "#",
   },
   {
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2022",
-    context: "Thành viên Ban tổ chức cuộc thi học thuật: Mastering IT lần thứ 15",
+    context: "Thành viên Ban tổ chức các cuộc thi học thuật: Mastering IT 15",
     proofUrl: "#",
   },
   {
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2022",
-    context: "Thành viên Ban tổ chức cuộc thi học thuật: Hackathon 2022",
+    context: "Thành viên Ban tổ chức các cuộc thi học thuật: Hackathon 2022",
     proofUrl: "#",
   },
   {
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2021",
-    context: "Thành viên Ban tổ chức cuộc thi học thuật: beCod3r",
+    context: "Thành viên Ban tổ chức các cuộc thi học thuật: beCod3r",
     proofUrl: "#",
   },
   {
@@ -263,7 +263,7 @@ const honorsAndAwardsData: Honor[] = [
     icon: 'fas fa-hands-helping',
     title: "Hoạt động Tình nguyện",
     period: "2021",
-    context: "Tình nguyện viên Chương trình Tiếp sức mùa thi (07/2021)",
+    context: "Tình nguyện viên chương trình 'Tiếp sức mùa thi' (07/2021)",
     proofUrl: "#",
   },
   {
@@ -284,7 +284,7 @@ const honorsAndAwardsData: Honor[] = [
     icon: 'fas fa-lightbulb',
     title: "Đóng góp chuyển đổi số",
     period: "2022",
-    context: "Hỗ trợ Đoàn Trường phát triển ứng dụng tuyên truyền chuyển đổi số cho chương trình phát động Tháng Thanh niên.",
+    context: "Hỗ trợ Đoàn trường phát triển ứng dụng tuyên truyền chuyển đổi số cho chương trình phát động Tháng Thanh niên.",
     proofUrl: "#",
   },
   {
