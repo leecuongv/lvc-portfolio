@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     role: "Head of ERP Department",
-    company: "Fahasa",
+    company: "Ho Chi Minh City Book Distribution Corporation - FAHASA",
     period: "09/2024 - Now",
     technologies: ["Java", "Spring Boot", "Redis", "MySQL", "PostgreSQL", "Docker", "ERP Architecture", "Agile/Scrum", "SonarQube"],
     description: [

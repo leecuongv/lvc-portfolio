@@ -34,7 +34,7 @@ const uiTranslations = {
     navContact: "Contact",
 
     // Ribbon
-    ribbonText: "Now leading ERP engineering at Fahasa · Building resilient enterprise backends",
+    ribbonText: "Now leading ERP engineering at FAHASA · Building resilient enterprise backends",
     ribbonAction: "Explore Career",
 
     // Hero
@@ -50,7 +50,7 @@ const uiTranslations = {
     heroSpecHeader: "SYSTEM ARCHITECTURE & CORE SPEC",
     heroSpecPosTitle: "Current Position",
     heroSpecPosRole: "Head of ERP Department",
-    heroSpecPosCompany: "Fahasa Book Corporation",
+    heroSpecPosCompany: "Ho Chi Minh City Book Distribution Corporation - FAHASA",
     heroSpecFrameworksTitle: "Core Frameworks",
     heroSpecFrameworksSub: "REST APIs, MVC, Microservices",
     heroSpecDbTitle: "Database & Caching",
@@ -60,7 +60,7 @@ const uiTranslations = {
 
     // Bento stats
     bentoRoleTitle: "Head of ERP",
-    bentoRoleSub: "Fahasa Book Corporation",
+    bentoRoleSub: "Ho Chi Minh City Book Distribution Corporation - FAHASA",
     bentoExpTitle: "3+ Years",
     bentoExpSub: "Production Engineering",
     bentoStackTitle: "Java & Spring",
@@ -120,7 +120,7 @@ const uiTranslations = {
     honorsOfficial: "Official Award",
     
     // Footer
-    footerNote1: "1. Experience highlights include enterprise ERP implementations at Fahasa Book Corporation, CoreBanking and backend service integration at HPT Vietnam, and simulated agile training at FPT Software.",
+    footerNote1: "1. Experience highlights include enterprise ERP implementations at Ho Chi Minh City Book Distribution Corporation - FAHASA, CoreBanking and backend service integration at HPT Vietnam, and simulated agile training at FPT Software.",
     footerNote2: "2. All certificates and academic distinctions are independently verifiable via Credly and official institutional records.",
     footerNav: "Navigation",
     footerCapabilities: "Capabilities",
@@ -143,7 +143,7 @@ const uiTranslations = {
     navContact: "Liên hệ",
 
     // Ribbon
-    ribbonText: "Hiện đang là Trưởng bộ phận ERP tại Fahasa · Xây dựng hệ thống backend doanh nghiệp",
+    ribbonText: "Hiện đang là Trưởng bộ phận ERP tại FAHASA · Xây dựng hệ thống backend doanh nghiệp",
     ribbonAction: "Xem sự nghiệp",
 
     // Hero
@@ -159,7 +159,7 @@ const uiTranslations = {
     heroSpecHeader: "KIẾN TRÚC HỆ THỐNG & THÔNG SỐ CỐT LÕI",
     heroSpecPosTitle: "Vị trí hiện tại",
     heroSpecPosRole: "Trưởng bộ phận ERP",
-    heroSpecPosCompany: "Công ty Fahasa",
+    heroSpecPosCompany: "Công ty Cổ phần Phát hành sách Thành phố Hồ Chí Minh - FAHASA",
     heroSpecFrameworksTitle: "Khung công nghệ chính",
     heroSpecFrameworksSub: "REST API, MVC, Microservices",
     heroSpecDbTitle: "Cơ sở dữ liệu & Caching",
@@ -169,7 +169,7 @@ const uiTranslations = {
 
     // Bento stats
     bentoRoleTitle: "Trưởng bộ phận ERP",
-    bentoRoleSub: "Công ty Fahasa",
+    bentoRoleSub: "Công ty Cổ phần Phát hành sách Thành phố Hồ Chí Minh - FAHASA",
     bentoExpTitle: "3+ Năm",
     bentoExpSub: "Kỹ sư thực chiến",
     bentoStackTitle: "Java & Spring",
@@ -229,7 +229,7 @@ const uiTranslations = {
     honorsOfficial: "Giải thưởng chính thức",
     
     // Footer
-    footerNote1: "1. Dấu ấn kinh nghiệm bao gồm triển khai hệ thống ERP doanh nghiệp tại Công ty Cổ phần Phát hành Sách Fahasa, tích hợp dịch vụ backend & CoreBanking tại HPT Vietnam, và mô hình Agile tại FPT Software.",
+    footerNote1: "1. Dấu ấn kinh nghiệm bao gồm triển khai hệ thống ERP doanh nghiệp tại Công ty Cổ phần Phát hành sách Thành phố Hồ Chí Minh - FAHASA, tích hợp dịch vụ backend & CoreBanking tại HPT Vietnam, và mô hình Agile tại FPT Software.",
     footerNote2: "2. Mọi chứng chỉ chuyên môn và danh hiệu học thuật đều có thể xác minh độc lập qua hệ thống Credly và hồ sơ chính thức của nhà trường.",
     footerNav: "Điều hướng",
     footerCapabilities: "Năng lực chuyên môn",
