@@ -147,7 +147,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Internship Trainee",
     company: "FPT Software",
     period: "07/2022 - 09/2022",
-    technologies: ["C++", "OOP", "Data Structures", "Git", "Agile Fundamentals"],
+    technologies: ["Java", "OOP", "Data Structures", "Git", "Agile Fundamentals"],
     description: [
         "Deepened programming skills, participated in soft skills courses to improve problem-solving abilities, teamwork skills, and presentation skills.",
         "Engaged in simulated projects to become familiar with real project environments."

@@ -146,7 +146,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Thực tập sinh",
     company: "FPT Software",
     period: "07/2022 - 09/2022",
-    technologies: ["C++", "OOP", "Data Structures", "Git", "Agile Fundamentals"],
+    technologies: ["Java", "OOP", "Data Structures", "Git", "Agile Fundamentals"],
     description: [
         "Nâng cao kỹ năng lập trình, tham gia các khóa học kỹ năng mềm để nâng cao khả năng giải quyết vấn đề, kỹ năng làm việc nhóm và kỹ năng thuyết trình.",
         "Tham gia vào các dự án giả lập để làm quen với môi trường dự án thực tế."
