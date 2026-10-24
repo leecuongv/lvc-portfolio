@@ -164,13 +164,13 @@ const HeroSection: React.FC = () => {
                   {/* Spec 3 */}
                   <div className="p-3.5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06]">
                     <div className="text-[11px] font-medium text-[#86868b] uppercase tracking-wider">
-                      Database Tier
+                      Database & Caching
                     </div>
                     <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1">
-                      SQL & NoSQL Engines
+                      Redis · SQL & NoSQL
                     </div>
                     <div className="text-xs text-[#86868b] mt-0.5">
-                      PostgreSQL, MySQL, MongoDB, Oracle
+                      Redis, PostgreSQL, MySQL, Oracle, Mongo
                     </div>
                   </div>
 
@@ -190,7 +190,7 @@ const HeroSection: React.FC = () => {
 
                 {/* Micro tech pills */}
                 <div className="pt-2 flex flex-wrap gap-1.5">
-                  {['Java Core', 'Spring Boot', 'PostgreSQL', 'Docker', 'MVC Architecture', 'SonarQube', 'Node.js', 'RESTful API'].map((tech) => (
+                  {['Java Core', 'Spring Boot', 'Redis', 'PostgreSQL', 'Docker', 'ERP Integration', 'Team Leadership', 'RESTful API', 'SonarQube'].map((tech) => (
                     <span
                       key={tech}
                       className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-black/[0.04] dark:bg-white/[0.08] text-[#1d1d1f] dark:text-[#f5f5f7] border border-black/[0.04] dark:border-white/[0.06]"

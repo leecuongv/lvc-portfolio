@@ -13,11 +13,13 @@ export const PERSONAL_INFO = {
 };
 
 export const SOFT_SKILLS = [
-  "Self-study",
-  "Independent work",
-  "Teamwork",
-  "Planning",
-  "Problem solving",
+  "Engineering Team Leadership & Mentoring",
+  "ERP Business Process Analysis & Optimization",
+  "Agile / Scrum Sprint Planning & Estimation",
+  "Cross-Functional Stakeholder Collaboration",
+  "Technical Solution Architecture & Consulting",
+  "Risk Management & Production Incident Response",
+  "Data-Driven Decision Making & Problem Solving",
 ];
 
 export const LANGUAGES = [
@@ -27,32 +29,64 @@ export const LANGUAGES = [
 
 export const SKILLS: SkillCategory[] = [
   {
-    title: "Programming Language/Framework",
-    skills: ["Java (Java Core, Spring Framework)", "JavaScript (NodeJS, Express)"],
+    title: "Backend & Programming Frameworks",
+    skills: [
+      "Java (Java Core, Spring Framework, Spring Boot)",
+      "NodeJS & Express",
+      "Object-Oriented Programming (OOP) & Clean Architecture",
+      "RESTful API & Web API Development",
+    ],
   },
   {
-    title: "Database",
-    skills: ["SQL: PostgreSQL, MSSQL, OracleDB", "NoSQL: MongoDB, Firebase"],
+    title: "Database & Caching Technologies",
+    skills: [
+      "Redis (Distributed Caching, Pub/Sub, Session Store, Distributed Lock)",
+      "SQL Engines: PostgreSQL, MySQL, MSSQL, OracleDB",
+      "NoSQL Engines: MongoDB, Firebase",
+      "Database Optimization: Query Tuning, Indexing & ACID Transactions",
+    ],
   },
   {
-    title: "Source Control",
-    skills: ["Git", "Github"],
+    title: "Enterprise ERP & System Integration",
+    skills: [
+      "Enterprise Integration: CoreBanking, POS, WMS, Digital Signature & E-Invoice",
+      "API Architecture: OpenAPI / Swagger, Webhooks, Message Brokers",
+      "System Architecture: MVC, Three-tier, Modular Monolith & Microservices",
+      "Third-Party Service Integration & Data Transformation",
+    ],
   },
   {
-    title: "Pattern",
-    skills: ["Architecture: MVC, Three-tier"],
+    title: "Team Leadership & Engineering Management",
+    skills: [
+      "Technical Team Leadership, Mentoring & Capacity Building",
+      "Sprint Planning, WBS Task Decomposition & Effort Estimation",
+      "Code Review, Technical Standards & CI/CD Quality Gates",
+      "Cross-Functional Stakeholder Collaboration & Solution Consulting",
+    ],
   },
   {
-    title: "Testing",
-    skills: ["Jmeter", "Postman"],
+    title: "DevOps & Infrastructure",
+    skills: [
+      "Docker & Containerization, Docker Compose",
+      "Version Control: Git, GitHub, Gitflow Workflow",
+      "CI/CD Pipelines, Server Deployment & Environment Setup",
+    ],
   },
   {
-    title: "Code Analysis Tools",
-    skills: ["SonarQube", "SonarCloud"],
+    title: "Testing & Code Quality",
+    skills: [
+      "Static Code Analysis: SonarQube, SonarCloud",
+      "API Testing & Automation: Postman, Newman",
+      "Performance & Load Testing: Apache JMeter",
+    ],
   },
   {
-    title: "DLC Model",
-    skills: ["Waterfall", "Agile"],
+    title: "Software Development Lifecycle (SDLC)",
+    skills: [
+      "Agile (Scrum / Kanban)",
+      "Waterfall & Hybrid Project Delivery",
+      "Business Requirements Analysis & System Specification",
+    ],
   },
 ];
 
@@ -89,11 +123,12 @@ export const EXPERIENCES: Experience[] = [
     company: "Fahasa",
     period: "09/2024 - Now",
     description: [
-      "Developed backend services using Java and Spring Framework to build RESTful APIs, Web APIs.",
-      "Utilized Object-Oriented Programming (OOP) principles and Design Patterns (Singleton, Factory) for solution design.",
-      "Designed, implemented, and optimized relational databases (MySQL, PostgreSQL); proficient in writing SQL queries and applying the MVC architecture.",
-      "Proactively solved problems and worked independently; utilized Docker for application containerization and deployment.",
-      "Participated in diverse projects, proactively researching and adopting new technologies such as Node.js."
+      "Lead and manage the ERP engineering team; facilitate Agile/Scrum sprint planning, task delegation, backlog grooming, and technical code reviews.",
+      "Architect backend enterprise services using Java and Spring Boot, building high-throughput RESTful APIs and reliable system integrations.",
+      "Implement Redis distributed caching layers (session storage, master data caching, distributed locks) to boost performance and reduce database load during peak retail traffic.",
+      "Design, maintain, and optimize relational databases (MySQL, PostgreSQL) ensuring data consistency, indexing efficiency, and ACID transactions.",
+      "Collaborate directly with cross-functional stakeholders (Retail POS, Warehouse WMS, Finance) to analyze business workflows and deliver scalable technical solutions.",
+      "Deploy services with Docker, establish automated CI/CD workflows, and enforce strict code quality standards via SonarQube."
     ],
   },
   {

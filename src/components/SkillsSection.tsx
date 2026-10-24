@@ -3,13 +3,16 @@ import { useLanguage } from '../LanguageContext';
 
 const getCategoryIcon = (title: string): string => {
   const lower = title.toLowerCase();
-  if (lower.includes('language') || lower.includes('ngôn ngữ') || lower.includes('framework')) return 'fas fa-code';
-  if (lower.includes('database') || lower.includes('cơ sở dữ liệu')) return 'fas fa-database';
+  if (lower.includes('language') || lower.includes('ngôn ngữ') || lower.includes('framework') || lower.includes('backend')) return 'fas fa-code';
+  if (lower.includes('database') || lower.includes('cơ sở dữ liệu') || lower.includes('caching') || lower.includes('redis')) return 'fas fa-database';
+  if (lower.includes('integration') || lower.includes('tích hợp') || lower.includes('erp')) return 'fas fa-network-wired';
+  if (lower.includes('leadership') || lower.includes('lãnh đạo') || lower.includes('management') || lower.includes('quản lý') || lower.includes('quản trị') || lower.includes('team')) return 'fas fa-users-gear';
+  if (lower.includes('devops') || lower.includes('docker') || lower.includes('hạ tầng') || lower.includes('infrastructure') || lower.includes('đóng gói')) return 'fab fa-docker';
   if (lower.includes('source') || lower.includes('mã nguồn') || lower.includes('git')) return 'fas fa-code-branch';
-  if (lower.includes('pattern') || lower.includes('mẫu thiết kế') || lower.includes('kiến trúc')) return 'fas fa-cubes';
-  if (lower.includes('testing') || lower.includes('kiểm thử')) return 'fas fa-vial';
+  if (lower.includes('pattern') || lower.includes('mẫu thiết kế') || lower.includes('kiến trúc') || lower.includes('architecture')) return 'fas fa-cubes';
+  if (lower.includes('testing') || lower.includes('kiểm thử') || lower.includes('quality') || lower.includes('chất lượng')) return 'fas fa-vial';
   if (lower.includes('analysis') || lower.includes('phân tích') || lower.includes('sonar')) return 'fas fa-shield-halved';
-  if (lower.includes('dlc') || lower.includes('mô hình') || lower.includes('agile')) return 'fas fa-diagram-project';
+  if (lower.includes('dlc') || lower.includes('mô hình') || lower.includes('agile') || lower.includes('lifecycle')) return 'fas fa-diagram-project';
   return 'fas fa-microchip';
 };
 

@@ -12,11 +12,13 @@ export const PERSONAL_INFO = {
 };
 
 export const SOFT_SKILLS = [
-  "Tự học",
-  "Làm việc độc lập",
-  "Làm việc nhóm",
-  "Lập kế hoạch",
-  "Giải quyết vấn đề",
+  "Lãnh đạo & Hướng dẫn phát triển đội ngũ (Team Leadership & Mentoring)",
+  "Phân tích & Tối ưu hóa quy trình nghiệp vụ ERP",
+  "Quản trị dự án Agile / Scrum & Phân rã tiến độ (Sprint Planning & WBS)",
+  "Giao tiếp & Kết nối đa phòng ban (Stakeholder Management)",
+  "Thiết kế kiến trúc giải pháp kỹ thuật (Solution Architecture)",
+  "Quản trị rủi ro & Xử lý sự cố vận hành (Incident Management & SLA)",
+  "Giải quyết vấn đề phức tạp & Ra quyết định dựa trên dữ liệu",
 ];
 
 export const LANGUAGES = [
@@ -26,32 +28,64 @@ export const LANGUAGES = [
 
 export const SKILLS: SkillCategory[] = [
   {
-    title: "Ngôn ngữ lập trình/Framework",
-    skills: ["Java (Java Core, Spring Framework)", "JavaScript (NodeJS, Express)"],
+    title: "Ngôn ngữ lập trình & Framework Backend",
+    skills: [
+      "Java (Java Core, Spring Framework, Spring Boot)",
+      "NodeJS & Express",
+      "Lập trình hướng đối tượng (OOP) & Clean Architecture",
+      "Phát triển RESTful API & Web API",
+    ],
   },
   {
-    title: "Cơ sở dữ liệu",
-    skills: ["SQL: PostgreSQL, MSSQL, OracleDB", "NoSQL: MongoDB, Firebase"],
+    title: "Cơ sở dữ liệu & Công nghệ Caching",
+    skills: [
+      "Redis (Distributed Caching, Pub/Sub, Quản lý Session, Distributed Lock)",
+      "Hệ CSDL quan hệ: PostgreSQL, MySQL, MSSQL, OracleDB",
+      "Hệ CSDL NoSQL: MongoDB, Firebase",
+      "Tối ưu hóa CSDL: Tối ưu truy vấn, Indexing & Đảm bảo tính toàn vẹn ACID",
+    ],
   },
   {
-    title: "Quản lý mã nguồn",
-    skills: ["Git", "Github"],
+    title: "Hệ thống ERP & Tích hợp Doanh nghiệp",
+    skills: [
+      "Tích hợp hệ sinh thái ERP: CoreBanking, POS, WMS, Chữ ký số & Hóa đơn điện tử",
+      "Kiến trúc API: OpenAPI / Swagger, Webhooks, Message Brokers",
+      "Kiến trúc hệ thống: MVC, Ba lớp (Three-tier), Modular Monolith & Microservices",
+      "Tích hợp dịch vụ bên thứ ba & Chuẩn hóa luồng dữ liệu",
+    ],
   },
   {
-    title: "Mẫu thiết kế & Kiến trúc",
-    skills: ["Kiến trúc: MVC, Ba lớp (Three-tier)"],
+    title: "Quản lý đội ngũ & Quản trị kỹ thuật (Leadership)",
+    skills: [
+      "Lãnh đạo kỹ thuật, Đào tạo & Phát triển năng lực thành viên (Mentoring)",
+      "Lập kế hoạch Sprint, Phân rã công việc (WBS) & Ước lượng độ phức tạp",
+      "Duyệt mã nguồn (Code Review), Chuẩn hóa tiêu chuẩn chất lượng kỹ thuật",
+      "Phối hợp liên phòng ban & Tư vấn giải pháp kỹ thuật cho Ban Giám đốc",
+    ],
   },
   {
-    title: "Kiểm thử",
-    skills: ["Jmeter", "Postman"],
+    title: "DevOps & Hạ tầng triển khai",
+    skills: [
+      "Docker & Đóng gói ứng dụng (Containerization), Docker Compose",
+      "Quản lý mã nguồn: Git, GitHub, Quy trình phân nhánh Gitflow",
+      "Quy trình CI/CD, Triển khai máy chủ & Thiết lập môi trường",
+    ],
   },
   {
-    title: "Công cụ phân tích mã nguồn",
-    skills: ["SonarQube", "SonarCloud"],
+    title: "Kiểm thử & Đảm bảo chất lượng mã nguồn",
+    skills: [
+      "Phân tích mã nguồn tĩnh: SonarQube, SonarCloud",
+      "Kiểm thử API & Tự động hóa: Postman, Newman",
+      "Kiểm thử tải & Hiệu năng: Apache JMeter",
+    ],
   },
   {
-    title: "Mô hình phát triển phần mềm",
-    skills: ["Waterfall (Thác nước)", "Agile (Linh hoạt)"],
+    title: "Mô hình phát triển phần mềm (SDLC)",
+    skills: [
+      "Agile (Scrum / Kanban)",
+      "Waterfall (Thác nước) & Mô hình kết hợp",
+      "Phân tích yêu cầu nghiệp vụ & Viết tài liệu đặc tả kỹ thuật",
+    ],
   },
 ];
 
@@ -88,11 +122,12 @@ export const EXPERIENCES: Experience[] = [
     company: "Fahasa",
     period: "09/2024 - Hiện tại",
     description: [
-      "Phát triển các dịch vụ backend sử dụng Java và Spring Framework để xây dựng các RESTful API và Web API.",
-      "Áp dụng các nguyên lý lập trình hướng đối tượng (OOP) và mẫu thiết kế (Singleton, Factory) cho thiết kế giải pháp.",
-      "Thiết kế, triển khai và tối ưu hóa cơ sở dữ liệu quan hệ (MySQL, PostgreSQL); thành thạo viết truy vấn SQL và áp dụng mô hình kiến trúc MVC.",
-      "Chủ động giải quyết vấn đề và làm việc độc lập; sử dụng Docker để đóng gói ứng dụng (containerization) và triển khai ứng dụng.",
-      "Tham gia vào nhiều dự án khác nhau, chủ động nghiên cứu và tiếp cận các công nghệ mới như Node.js."
+      "Lãnh đạo và quản lý đội ngũ kỹ sư ERP; chủ trì lập kế hoạch Sprint (Agile/Scrum), phân bổ nhiệm vụ, đánh giá độ phức tạp và duyệt mã (Code Review).",
+      "Thiết kế kiến trúc và phát triển các dịch vụ backend cốt lõi bằng Java và Spring Boot, xây dựng các RESTful API và luồng tích hợp dữ liệu hiệu năng cao.",
+      "Ứng dụng Redis làm tầng caching phân tán (lưu trữ session, cache dữ liệu danh mục, distributed lock), tối ưu hóa tốc độ phản hồi và giảm tải CSDL trong các đợt cao điểm bán lẻ.",
+      "Thiết kế, chuẩn hóa và tối ưu hóa cơ sở dữ liệu quan hệ (MySQL, PostgreSQL), đảm bảo tính toàn vẹn giao dịch (ACID), lập chỉ mục (indexing) và phân vùng dữ liệu.",
+      "Làm việc trực tiếp với các phòng ban liên quan (Bán lẻ POS, Quản lý kho WMS, Kế toán - Tài chính) để phân tích yêu cầu nghiệp vụ và chuyển hóa thành giải pháp phần mềm hoàn chỉnh.",
+      "Áp dụng Docker để đóng gói ứng dụng (containerization), chuẩn hóa quy trình triển khai CI/CD và kiểm soát chất lượng mã nguồn qua SonarQube."
     ],
   },
   {
