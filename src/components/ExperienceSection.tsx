@@ -10,7 +10,7 @@ const ExperienceSection: React.FC = () => {
         {/* Apple Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.2em] font-semibold apple-blue-gradient">
-            CAREER ROADMAP
+            {t('expEyebrow')}
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tighter text-[#1d1d1f] dark:text-white mt-2 mb-4">
             {t('experienceTitle')}
@@ -47,7 +47,7 @@ const ExperienceSection: React.FC = () => {
                         </span>
                         {isCurrent && (
                           <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                            Current Role
+                            {t('expCurrentRole')}
                           </span>
                         )}
                       </div>
@@ -90,7 +90,7 @@ const ExperienceSection: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-black/[0.05] dark:border-white/[0.06]">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-amber-500">
-                      Academic Foundation
+                      {t('expAcademicFoundation')}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-bold text-[#1d1d1f] dark:text-white tracking-tight mt-1">
                       {edu.degree}

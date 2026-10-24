@@ -10,7 +10,7 @@ const CertificatesSection: React.FC = () => {
         {/* Apple Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.2em] font-semibold apple-blue-gradient">
-            ACCREDITATIONS & CLOUD
+            {t('certEyebrow')}
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tighter text-[#1d1d1f] dark:text-white mt-2 mb-4">
             {t('certificatesTitle')}
@@ -77,7 +77,7 @@ const CertificatesSection: React.FC = () => {
                 <div className="relative z-10 pt-6 mt-6 border-t border-black/[0.05] dark:border-white/[0.06] flex items-center justify-between">
                   <span className="inline-flex items-center gap-1.5 text-xs text-emerald-600 dark:text-emerald-400 font-medium">
                     <i className="fas fa-circle-check text-[11px]"></i>
-                    <span>Verified Credential</span>
+                    <span>{t('certVerified')}</span>
                   </span>
 
                   {cert.url && cert.url !== '#' && (

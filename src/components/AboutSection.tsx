@@ -42,7 +42,7 @@ const AboutSection: React.FC = () => {
                       {t('aboutContact')}
                     </h3>
                     <p className="text-xs text-[#86868b]">
-                      Open to full-time, high-impact engineering roles
+                      {t('aboutOpenRole')}
                     </p>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ const AboutSection: React.FC = () => {
             </div>
 
             <div className="pt-6 mt-6 border-t border-black/[0.05] dark:border-white/[0.06] flex items-center justify-between text-xs text-[#86868b]">
-              <span>Based in Ho Chi Minh City, Vietnam</span>
+              <span>{t('aboutLocation')}</span>
               <span className="text-emerald-500 font-semibold flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                 GMT+7 (ICT)
@@ -179,7 +179,7 @@ const AboutSection: React.FC = () => {
                       {lang}
                     </span>
                     <span className="text-xs font-medium text-apple-blue px-2.5 py-0.5 rounded-full bg-apple-blue/10">
-                      Fluent
+                      {t('aboutFluent')}
                     </span>
                   </div>
                 ))}

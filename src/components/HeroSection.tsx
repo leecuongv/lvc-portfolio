@@ -131,7 +131,7 @@ const HeroSection: React.FC = () => {
               <div className="md:col-span-7 space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-black/[0.06] dark:border-white/[0.08]">
                   <span className="text-xs font-semibold tracking-wider uppercase text-[#86868b]">
-                    SYSTEM ARCHITECTURE & CORE SPEC
+                    {t('heroSpecHeader')}
                   </span>
                   <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-black/[0.04] dark:bg-white/[0.08] text-apple-blue font-medium">
                     JAVA · SPRING · CLOUD
@@ -142,33 +142,33 @@ const HeroSection: React.FC = () => {
                   {/* Spec 1 */}
                   <div className="p-3.5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06]">
                     <div className="text-[11px] font-medium text-[#86868b] uppercase tracking-wider">
-                      Current Position
+                      {t('heroSpecPosTitle')}
                     </div>
                     <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1">
-                      Head of ERP Department
+                      {t('heroSpecPosRole')}
                     </div>
                     <div className="text-xs text-apple-blue font-medium mt-0.5">
-                      Fahasa Book Corporation
+                      {t('heroSpecPosCompany')}
                     </div>
                   </div>
 
                   {/* Spec 2 */}
                   <div className="p-3.5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06]">
                     <div className="text-[11px] font-medium text-[#86868b] uppercase tracking-wider">
-                      Core Frameworks
+                      {t('heroSpecFrameworksTitle')}
                     </div>
                     <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1">
                       Java 21 · Spring Boot
                     </div>
                     <div className="text-xs text-[#86868b] mt-0.5">
-                      REST APIs, MVC, Microservices
+                      {t('heroSpecFrameworksSub')}
                     </div>
                   </div>
 
                   {/* Spec 3 */}
                   <div className="p-3.5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06]">
                     <div className="text-[11px] font-medium text-[#86868b] uppercase tracking-wider">
-                      Database & Caching
+                      {t('heroSpecDbTitle')}
                     </div>
                     <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1">
                       Redis · SQL & NoSQL
@@ -181,13 +181,13 @@ const HeroSection: React.FC = () => {
                   {/* Spec 4 */}
                   <div className="p-3.5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06]">
                     <div className="text-[11px] font-medium text-[#86868b] uppercase tracking-wider">
-                      Education & Honors
+                      {t('heroSpecEduTitle')}
                     </div>
                     <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1">
-                      HCMUTE (GPA 3.2/4)
+                      {t('heroSpecEduDegree')}
                     </div>
                     <div className="text-xs text-amber-500 font-medium mt-0.5">
-                      3x Student with 5 Merits
+                      {t('heroSpecEduAward')}
                     </div>
                   </div>
                 </div>

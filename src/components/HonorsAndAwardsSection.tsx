@@ -44,7 +44,7 @@ const HonorsAndAwardsSection: React.FC = () => {
         {/* Apple Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs uppercase tracking-[0.2em] font-semibold apple-amber-gradient">
-            RECOGNITION & IMPACT
+            {t('honorsEyebrow')}
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tighter text-[#1d1d1f] dark:text-white mt-2 mb-4">
             {t('honorsTitle')}
@@ -123,7 +123,7 @@ const HonorsAndAwardsSection: React.FC = () => {
 
                 {/* Footer Proof Link */}
                 <div className="pt-5 mt-5 border-t border-black/[0.05] dark:border-white/[0.06] flex items-center justify-between text-xs">
-                  <span className="text-[#86868b]">Verified Activity</span>
+                  <span className="text-[#86868b]">{t('honorsVerified')}</span>
                   {hasProof ? (
                     <a
                       href={item.proofUrl}
@@ -135,7 +135,7 @@ const HonorsAndAwardsSection: React.FC = () => {
                       <i className="fas fa-arrow-up-right-from-square text-[10px]"></i>
                     </a>
                   ) : (
-                    <span className="text-zinc-400 dark:text-zinc-600">Official Award</span>
+                    <span className="text-zinc-400 dark:text-zinc-600">{t('honorsOfficial')}</span>
                   )}
                 </div>
               </div>

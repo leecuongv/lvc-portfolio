@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../LanguageContext';
 
 const ProjectsSection: React.FC = () => {
-  const { projects, t } = useLanguage();
+  const { projects, t, language } = useLanguage();
 
   const flagshipProject = projects[0];
   const otherProjects = projects.slice(1);
@@ -33,10 +33,10 @@ const ProjectsSection: React.FC = () => {
               <div className="lg:col-span-8 space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-apple-blue/10 text-apple-blue dark:bg-apple-blue/20 dark:text-apple-bluelight border border-apple-blue/20">
-                    Flagship Architecture
+                    {t('projectsFeaturedBadge')}
                   </span>
                   <span className="text-xs text-[#86868b]">
-                    Distributed Backend System
+                    {language === 'en' ? 'Distributed Backend System' : 'Hệ thống Backend Phân tán'}
                   </span>
                 </div>
 

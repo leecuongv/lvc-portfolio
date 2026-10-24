@@ -25,7 +25,7 @@ const SkillsSection: React.FC = () => {
         {/* Apple Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.2em] font-semibold apple-blue-gradient">
-            ARCHITECTURE & CAPABILITIES
+            {t('skillsEyebrow')}
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tighter text-[#1d1d1f] dark:text-white mt-2 mb-4">
             {t('skillsTitle')}
@@ -70,9 +70,9 @@ const SkillsSection: React.FC = () => {
                 </div>
 
                 <div className="pt-6 flex items-center justify-between text-[11px] text-[#86868b]">
-                  <span className="uppercase tracking-wider font-semibold">Production Ready</span>
+                  <span className="uppercase tracking-wider font-semibold">{t('skillsProductionReady')}</span>
                   <span className="flex items-center gap-1 text-emerald-500 font-medium">
-                    <i className="fas fa-check-circle text-[10px]"></i> Verified
+                    <i className="fas fa-check-circle text-[10px]"></i> {t('skillsVerified')}
                   </span>
                 </div>
               </div>

@@ -46,6 +46,18 @@ const uiTranslations = {
     heroContactMe: "Get in touch",
     heroOpenToWork: "Open to Senior Backend Roles",
 
+    // Hero Spec Sheet
+    heroSpecHeader: "SYSTEM ARCHITECTURE & CORE SPEC",
+    heroSpecPosTitle: "Current Position",
+    heroSpecPosRole: "Head of ERP Department",
+    heroSpecPosCompany: "Fahasa Book Corporation",
+    heroSpecFrameworksTitle: "Core Frameworks",
+    heroSpecFrameworksSub: "REST APIs, MVC, Microservices",
+    heroSpecDbTitle: "Database & Caching",
+    heroSpecEduTitle: "Education & Honors",
+    heroSpecEduDegree: "HCMUTE (GPA 3.2/4)",
+    heroSpecEduAward: "3x Student with 5 Merits",
+
     // Bento stats
     bentoRoleTitle: "Head of ERP",
     bentoRoleSub: "Fahasa Book Corporation",
@@ -64,14 +76,23 @@ const uiTranslations = {
     aboutLanguage: "Languages",
     aboutCopyEmail: "Copy Email",
     aboutEmailCopied: "Copied!",
+    aboutOpenRole: "Open to full-time, high-impact engineering roles",
+    aboutLocation: "Based in Ho Chi Minh City, Vietnam",
+    aboutFluent: "Fluent",
     
     // Skills
     skillsTitle: "Technical Specifications",
     skillsSubtitle: "A battle-tested stack spanning distributed backend engines, cloud databases, and DevOps automation.",
+    skillsEyebrow: "ARCHITECTURE & CAPABILITIES",
+    skillsProductionReady: "Production Ready",
+    skillsVerified: "Verified",
     
     // Experience & Education
     experienceTitle: "Career Milestones",
     experienceSubtitle: "Track record of technical leadership, enterprise integrations, and mission-critical systems.",
+    expEyebrow: "CAREER ROADMAP",
+    expCurrentRole: "Current Role",
+    expAcademicFoundation: "Academic Foundation",
     
     // Projects
     projectsTitle: "Featured Projects",
@@ -83,13 +104,27 @@ const uiTranslations = {
     certificatesTitle: "Certifications",
     certificatesSubtitle: "Industry-standard cloud and project management credentials.",
     certificatesVerify: "Verify Credential",
+    certEyebrow: "ACCREDITATIONS & CLOUD",
+    certVerified: "Verified Credential",
     
     // Honors & Awards
     honorsTitle: "Honors & Recognition",
     honorsSubtitle: "Academic excellence, community leadership, and competitive distinctions.",
     honorsViewProof: "View Proof",
+    honorsEyebrow: "RECOGNITION & IMPACT",
+    honorsVerified: "Verified Activity",
+    honorsOfficial: "Official Award",
     
     // Footer
+    footerNote1: "1. Experience highlights include enterprise ERP implementations at Fahasa Book Corporation, CoreBanking and backend service integration at HPT Vietnam, and simulated agile training at FPT Software.",
+    footerNote2: "2. All certificates and academic distinctions are independently verifiable via Credly and official institutional records.",
+    footerNav: "Navigation",
+    footerCapabilities: "Capabilities",
+    footerConnect: "Connect",
+    footerLangRegion: "Language & Region",
+    footerDirectEmail: "Direct Email",
+    footerCity: "Vietnam · Ho Chi Minh City",
+    footerBackToTop: "Back to top",
     footerRights: "All rights reserved."
   },
   vi: {
@@ -116,6 +151,18 @@ const uiTranslations = {
     heroContactMe: "Liên hệ ngay",
     heroOpenToWork: "Sẵn sàng cho cơ hội Senior Backend",
 
+    // Hero Spec Sheet
+    heroSpecHeader: "KIẾN TRÚC HỆ THỐNG & THÔNG SỐ CỐT LÕI",
+    heroSpecPosTitle: "Vị trí hiện tại",
+    heroSpecPosRole: "Trưởng bộ phận ERP",
+    heroSpecPosCompany: "Công ty Fahasa",
+    heroSpecFrameworksTitle: "Khung công nghệ chính",
+    heroSpecFrameworksSub: "REST API, MVC, Microservices",
+    heroSpecDbTitle: "Cơ sở dữ liệu & Caching",
+    heroSpecEduTitle: "Học vấn & Thành tích",
+    heroSpecEduDegree: "ĐH SPKT TP.HCM (GPA 3.2/4)",
+    heroSpecEduAward: "3 Năm liền Sinh viên 5 Tốt",
+
     // Bento stats
     bentoRoleTitle: "Trưởng bộ phận ERP",
     bentoRoleSub: "Công ty Fahasa",
@@ -134,14 +181,23 @@ const uiTranslations = {
     aboutLanguage: "Ngoại ngữ",
     aboutCopyEmail: "Sao chép Email",
     aboutEmailCopied: "Đã chép!",
+    aboutOpenRole: "Sẵn sàng cho các cơ hội kỹ thuật toàn thời gian và tạo tác động lớn",
+    aboutLocation: "Sinh sống & làm việc tại TP. Hồ Chí Minh, Việt Nam",
+    aboutFluent: "Thành thạo",
     
     // Skills
     skillsTitle: "Thông số kỹ thuật (Tech Specs)",
     skillsSubtitle: "Công nghệ được kiểm chứng trong môi trường thực tế từ backend, cơ sở dữ liệu đến DevOps.",
+    skillsEyebrow: "KIẾN TRÚC & NĂNG LỰC",
+    skillsProductionReady: "Sẵn sàng Production",
+    skillsVerified: "Đã xác thực",
     
     // Experience & Education
     experienceTitle: "Hành trình sự nghiệp",
     experienceSubtitle: "Dấu ấn phát triển qua các vị trí kỹ thuật nòng cốt và hệ thống trọng yếu.",
+    expEyebrow: "LỘ TRÌNH SỰ NGHIỆP",
+    expCurrentRole: "Vị trí hiện tại",
+    expAcademicFoundation: "Nền tảng học thuật",
     
     // Projects
     projectsTitle: "Dự án tiêu biểu",
@@ -153,13 +209,27 @@ const uiTranslations = {
     certificatesTitle: "Chứng chỉ quốc tế",
     certificatesSubtitle: "Chứng nhận chuyên môn về điện toán đám mây và quản lý dự án.",
     certificatesVerify: "Xác minh chứng chỉ",
+    certEyebrow: "CHỨNG NHẬN & ĐIỆN TOÁN ĐÁM MÂY",
+    certVerified: "Chứng chỉ đã xác thực",
     
     // Honors & Awards
     honorsTitle: "Giải thưởng & Hoạt động",
     honorsSubtitle: "Ghi nhận thành tích học tập xuất sắc, công tác Đoàn - Hội và các phong trào học thuật.",
     honorsViewProof: "Xem minh chứng",
+    honorsEyebrow: "THÀNH TÍCH & ĐÓNG GÓP",
+    honorsVerified: "Hoạt động đã xác nhận",
+    honorsOfficial: "Giải thưởng chính thức",
     
     // Footer
+    footerNote1: "1. Dấu ấn kinh nghiệm bao gồm triển khai hệ thống ERP doanh nghiệp tại Công ty Cổ phần Phát hành Sách Fahasa, tích hợp dịch vụ backend & CoreBanking tại HPT Vietnam, và mô hình Agile tại FPT Software.",
+    footerNote2: "2. Mọi chứng chỉ chuyên môn và danh hiệu học thuật đều có thể xác minh độc lập qua hệ thống Credly và hồ sơ chính thức của nhà trường.",
+    footerNav: "Điều hướng",
+    footerCapabilities: "Năng lực chuyên môn",
+    footerConnect: "Kết nối",
+    footerLangRegion: "Ngôn ngữ & Khu vực",
+    footerDirectEmail: "Email trực tiếp",
+    footerCity: "Việt Nam · TP. Hồ Chí Minh",
+    footerBackToTop: "Về đầu trang",
     footerRights: "Bảo lưu mọi quyền."
   }
 };

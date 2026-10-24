@@ -14,10 +14,10 @@ const Footer: React.FC = () => {
         {/* Apple Style Top Disclaimer / Colophon Note */}
         <div className="pb-8 border-b border-black/[0.06] dark:border-white/[0.08] space-y-2 leading-relaxed">
           <p>
-            1. Experience highlights include enterprise ERP implementations at Fahasa Book Corporation, CoreBanking and backend service integration at HPT Vietnam, and simulated agile training at FPT Software.
+            {t('footerNote1')}
           </p>
           <p>
-            2. All certificates and academic distinctions are independently verifiable via Credly and official institutional records.
+            {t('footerNote2')}
           </p>
         </div>
 
@@ -25,30 +25,31 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-2">
           <div>
             <h4 className="font-semibold text-[#1d1d1f] dark:text-white mb-3">
-              Navigation
+              {t('footerNav')}
             </h4>
             <ul className="space-y-2">
               <li><a href="#home" className="hover:underline">{t('navHome')}</a></li>
-              <li><a href="#about" className="hover:underline">{t('navAbout')}</a></li>
-              <li><a href="#experience" className="hover:underline">{t('navExperience')}</a></li>
               <li><a href="#projects" className="hover:underline">{t('navProjects')}</a></li>
+              <li><a href="#experience" className="hover:underline">{t('navExperience')}</a></li>
+              <li><a href="#skills" className="hover:underline">{t('navSkills')}</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold text-[#1d1d1f] dark:text-white mb-3">
-              Capabilities
+              {t('footerCapabilities')}
             </h4>
             <ul className="space-y-2">
               <li><a href="#skills" className="hover:underline">{t('navSkills')}</a></li>
               <li><a href="#certificates" className="hover:underline">{t('navCertificates')}</a></li>
               <li><a href="#honors-awards" className="hover:underline">{t('navHonorsAwards')}</a></li>
+              <li><a href="#about" className="hover:underline">{t('navAbout')}</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold text-[#1d1d1f] dark:text-white mb-3">
-              Connect
+              {t('footerConnect')}
             </h4>
             <ul className="space-y-2">
               <li>
@@ -63,7 +64,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href={`mailto:${personalInfo.email}`} className="hover:underline">
-                  Direct Email
+                  {t('footerDirectEmail')}
                 </a>
               </li>
             </ul>
@@ -71,7 +72,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="font-semibold text-[#1d1d1f] dark:text-white mb-3">
-              Language & Region
+              {t('footerLangRegion')}
             </h4>
             <div className="space-y-3">
               <button
@@ -81,7 +82,7 @@ const Footer: React.FC = () => {
                 <i className="fas fa-globe text-[11px]"></i>
                 <span>{language === 'en' ? 'English (US)' : 'Tiếng Việt'}</span>
               </button>
-              <p className="text-[11px]">Vietnam · Ho Chi Minh City</p>
+              <p className="text-[11px]">{t('footerCity')}</p>
             </div>
           </div>
         </div>
@@ -96,7 +97,7 @@ const Footer: React.FC = () => {
             onClick={scrollToTop}
             className="inline-flex items-center gap-1.5 text-xs text-apple-blue hover:text-apple-bluehover font-medium transition-colors"
           >
-            <span>Back to top</span>
+            <span>{t('footerBackToTop')}</span>
             <i className="fas fa-arrow-up text-[10px]"></i>
           </button>
         </div>
