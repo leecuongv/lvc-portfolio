@@ -2,7 +2,7 @@
 import { Project, SkillCategory, Experience, Education, Certificate, Honor } from './types';
 
 export const PERSONAL_INFO = {
-  name: "CƯỜNG LÊ VĂN",
+  name: "LÊ VĂN CƯỜNG",
   title: "Software Engineer",
   objective: "Contributing to the development and success of the company where I work & Strive to become a senior developer in the future.",
   email: "cuonglevan.work@gmail.com",

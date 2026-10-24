@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../LanguageContext';
 
 interface HeaderProps {
@@ -8,7 +8,16 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ theme, onThemeSwitch }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { language, toggleLanguage, t, personalInfo } = useLanguage();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const NAV_LINKS = [
     { href: '#home', label: t('navHome') },
@@ -25,58 +34,122 @@ const Header: React.FC<HeaderProps> = ({ theme, onThemeSwitch }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <a href="#home" className="text-xl font-bold text-primary-600 dark:text-primary-400">
-              {personalInfo.name.split(' ').slice(0, 2).join(' ')}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'apple-glass-nav shadow-sm'
+          : 'bg-white/70 dark:bg-black/70 backdrop-blur-md border-b border-black/[0.04] dark:border-white/[0.08]'
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-12">
+          {/* Brand & Name */}
+          <div className="flex items-center gap-2">
+            <a
+              href="#home"
+              className="flex items-center gap-2 text-[#1d1d1f] dark:text-[#f5f5f7] transition-opacity hover:opacity-75"
+              aria-label="Home"
+            >
+              <span className="text-[14px] font-bold tracking-tight">
+                {personalInfo.name}
+              </span>
             </a>
           </div>
-          <div className="hidden md:flex items-center">
-            <nav className="ml-10 flex items-baseline space-x-4">
-              {NAV_LINKS.map(link => (
-                <a key={link.label} href={link.href} className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-            {/* Language Switcher Button (Desktop) */}
-            <button onClick={toggleLanguage} className="ml-4 px-2.5 py-1 rounded-full text-xs font-bold border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex items-center gap-1.5 transition-colors">
-              <i className="fas fa-globe"></i>
-              <span>{language === 'en' ? 'EN' : 'VI'}</span>
+
+          {/* Desktop Navigation Links (Apple Style: centered, compact, 12-13px, muted) */}
+          <nav className="hidden lg:flex items-center space-x-6 text-[12px] font-normal tracking-tight">
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-[#1d1d1f]/75 dark:text-[#f5f5f7]/75 hover:text-[#0071e3] dark:hover:text-white transition-colors duration-150"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Right Action Icons & Pill Buttons */}
+          <div className="hidden sm:flex items-center space-x-2">
+            {/* Language Switcher Pill */}
+            <button
+              onClick={toggleLanguage}
+              className="px-2.5 py-1 rounded-full text-[11px] font-medium tracking-tight bg-black/[0.04] dark:bg-white/[0.08] hover:bg-black/[0.08] dark:hover:bg-white/[0.14] text-[#1d1d1f] dark:text-[#f5f5f7] transition-all flex items-center gap-1.5 border border-black/[0.05] dark:border-white/[0.1]"
+              title="Toggle Language"
+              aria-label="Toggle Language"
+            >
+              <i className="fas fa-globe text-[10px] opacity-70"></i>
+              <span className="font-semibold">{language.toUpperCase()}</span>
             </button>
+
             {/* Theme Toggle Button */}
-            <button onClick={onThemeSwitch} className="ml-2 p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-              <i className={theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon'}></i>
+            <button
+              onClick={onThemeSwitch}
+              className="w-7 h-7 rounded-full flex items-center justify-center text-[12px] text-[#1d1d1f]/80 dark:text-[#f5f5f7]/80 hover:bg-black/[0.05] dark:hover:bg-white/[0.1] transition-all"
+              title="Toggle Theme"
+              aria-label="Toggle Light and Dark Theme"
+            >
+              <i className={theme === 'dark' ? 'fas fa-sun text-amber-400' : 'fas fa-moon text-zinc-600'}></i>
             </button>
+
+            {/* Apple Blue CTA */}
+            <a
+              href="#about"
+              className="ml-1 apple-btn-primary !py-1 !px-3 !text-[12px] !font-medium shadow-none"
+            >
+              <span>{t('heroContactMe')}</span>
+              <i className="fas fa-arrow-right text-[9px] opacity-80"></i>
+            </a>
           </div>
-          <div className="md:hidden flex items-center">
-            {/* Language Switcher Button (Mobile) */}
-            <button onClick={toggleLanguage} className="mr-2 px-2.5 py-1 rounded-full text-xs font-bold border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex items-center gap-1.5 transition-colors">
-              <i className="fas fa-globe"></i>
-              <span>{language === 'en' ? 'EN' : 'VI'}</span>
+
+          {/* Mobile Right Controls */}
+          <div className="lg:hidden flex items-center space-x-2">
+            <button
+              onClick={toggleLanguage}
+              className="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-black/[0.04] dark:bg-white/[0.08] text-[#1d1d1f] dark:text-[#f5f5f7]"
+            >
+              {language.toUpperCase()}
             </button>
-            {/* Theme Toggle Button */}
-            <button onClick={onThemeSwitch} className="mr-2 p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-              <i className={theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon'}></i>
+            <button
+              onClick={onThemeSwitch}
+              className="w-7 h-7 rounded-full flex items-center justify-center text-[12px] text-[#1d1d1f] dark:text-[#f5f5f7]"
+            >
+              <i className={theme === 'dark' ? 'fas fa-sun text-amber-400' : 'fas fa-moon'}></i>
             </button>
-            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-              <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-8 h-8 rounded-full flex items-center justify-center text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-black/[0.05] dark:hover:bg-white/[0.1]"
+              aria-label="Toggle Menu"
+            >
+              <i className={isOpen ? 'fas fa-times text-sm' : 'fas fa-bars text-sm'}></i>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Drawer (Apple iOS Sheet Style) */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {NAV_LINKS.map(link => (
-              <a key={link.label} href={link.href} onClick={handleLinkClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
+        <div className="lg:hidden apple-glass border-b border-black/[0.08] dark:border-white/[0.12] transition-all animate-fadeIn">
+          <div className="px-6 py-6 space-y-3">
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={handleLinkClick}
+                className="block text-base font-medium text-[#1d1d1f] dark:text-[#f5f5f7] hover:text-[#0071e3] transition-colors py-1.5 border-b border-black/[0.04] dark:border-white/[0.04]"
+              >
                 {link.label}
               </a>
             ))}
+            <div className="pt-2">
+              <a
+                href="#about"
+                onClick={handleLinkClick}
+                className="w-full apple-btn-primary !py-2.5 text-center justify-center text-sm"
+              >
+                {t('heroContactMe')}
+              </a>
+            </div>
           </div>
         </div>
       )}

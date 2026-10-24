@@ -1,18 +1,19 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from './src/components/Header';
 import HeroSection from './src/components/HeroSection';
-import AboutSection from './src/components/AboutSection';
-import SkillsSection from './src/components/SkillsSection';
-import ExperienceSection from './src/components/ExperienceSection';
 import ProjectsSection from './src/components/ProjectsSection';
+import ExperienceSection from './src/components/ExperienceSection';
+import SkillsSection from './src/components/SkillsSection';
 import CertificatesSection from './src/components/CertificatesSection';
 import HonorsAndAwardsSection from './src/components/HonorsAndAwardsSection';
+import AboutSection from './src/components/AboutSection';
 import Footer from './src/components/Footer';
 import { LanguageProvider } from './src/LanguageContext';
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'dark'; // Default to sleek dark mode like Apple Pro products
+  });
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -24,24 +25,27 @@ const App: React.FC = () => {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   return (
     <LanguageProvider>
-      <div className="text-gray-800 dark:text-gray-200 transition-colors duration-300">
+      <div className="min-h-screen bg-[#f5f5f7] dark:bg-[#000000] text-[#1d1d1f] dark:text-[#f5f5f7] selection:bg-apple-blue selection:text-white transition-colors duration-300">
         <Header theme={theme} onThemeSwitch={handleThemeSwitch} />
-        <main className="pt-20">
-          <div id="home" className="min-h-screen flex items-center">
-              <HeroSection />
+        
+        <main className="pt-12">
+          <div id="home">
+            <HeroSection />
           </div>
-          <AboutSection />
-          <SkillsSection />
-          <ExperienceSection />
+
           <ProjectsSection />
+          <ExperienceSection />
+          <SkillsSection />
           <CertificatesSection />
           <HonorsAndAwardsSection />
+          <AboutSection />
         </main>
+
         <Footer />
       </div>
     </LanguageProvider>
