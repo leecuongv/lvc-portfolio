@@ -122,7 +122,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Head of ERP Department",
     company: "Fahasa",
     period: "09/2024 - Now",
-    technologies: ["Java 21", "Spring Boot", "Redis", "MySQL", "PostgreSQL", "Docker", "ERP Architecture", "Agile/Scrum", "SonarQube"],
+    technologies: ["Java", "Spring Boot", "Redis", "MySQL", "PostgreSQL", "Docker", "ERP Architecture", "Agile/Scrum", "SonarQube"],
     description: [
       "Lead and manage the ERP engineering team; facilitate Agile/Scrum sprint planning, task delegation, backlog grooming, and technical code reviews.",
       "Architect backend enterprise services using Java and Spring Boot, building high-throughput RESTful APIs and reliable system integrations.",

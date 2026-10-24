@@ -158,7 +158,7 @@ const HeroSection: React.FC = () => {
                       {t('heroSpecFrameworksTitle')}
                     </div>
                     <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1">
-                      Java 21 · Spring Boot
+                      Java · Spring Boot
                     </div>
                     <div className="text-xs text-[#86868b] mt-0.5">
                       {t('heroSpecFrameworksSub')}
