@@ -187,16 +187,16 @@ const honorsAndAwardsData: Honor[] = [
   },
   {
     icon: 'fas fa-star',
-    title: "Đoàn viên xuất sắc",
+    title: "Đoàn viên ưu tú",
     period: "2021",
-    context: "Đoàn viên xuất sắc - Năm học 2020-2021",
+    context: "Đoàn viên ưu tú - Năm học 2020-2021",
     proofUrl: "#",
   },
   {
     icon: 'fas fa-star',
-    title: "Thành viên Ban Chấp hành",
+    title: "Thành viên Ban Chấp hành Liên chi hội Khoa",
     period: "2022",
-    context: "Cán bộ Đoàn - Hội xuất sắc của Khoa - 2022",
+    context: "Cán bộ Đoàn - Hội tiêu biểu của Khoa - 2022",
     proofUrl: "https://www.facebook.com/photo/?fbid=3386772624886535&set=a.1467109430186207",
   },
   {
@@ -215,9 +215,9 @@ const honorsAndAwardsData: Honor[] = [
   },
   {
     icon: 'fas fa-star',
-    title: "Đoàn viên xuất sắc",
+    title: "Đoàn viên ưu tú",
     period: "2022",
-    context: "Đoàn viên xuất sắc - Năm học 2021-2022",
+    context: "Đoàn viên ưu tú - Năm học 2021-2022",
     proofUrl: "#",
   },
   {
