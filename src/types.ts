@@ -1,3 +1,14 @@
+export interface PersonalInfo {
+  name: string;
+  title: string;
+  objective: string;
+  email: string;
+  phone: string;
+  github: string;
+  linkedin: string;
+  cvUrl: string;
+}
+
 export interface Project {
   title: string;
   description: string;

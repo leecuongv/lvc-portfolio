@@ -9,25 +9,38 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ theme, onThemeSwitch }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   const { language, toggleLanguage, t, personalInfo } = useLanguage();
+
+  const NAV_LINKS = [
+    { href: '#home', label: t('navHome') },
+    { href: '#projects', label: t('navProjects') },
+    { href: '#experience', label: t('navExperience') },
+    { href: '#skills', label: t('navSkills') },
+    { href: '#certificates', label: t('navCertificates') },
+    { href: '#honors-awards', label: t('navHonorsAwards') },
+    { href: '#about', label: t('navAbout') },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      const sectionIds = ['home', 'projects', 'experience', 'skills', 'certificates', 'honors-awards', 'about'];
+      const scrollY = window.scrollY + 140;
+
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sectionIds[i]);
+        if (el && el.offsetTop <= scrollY) {
+          setActiveSection(sectionIds[i]);
+          break;
+        }
+      }
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const NAV_LINKS = [
-    { href: '#home', label: t('navHome') },
-    { href: '#about', label: t('navAbout') },
-    { href: '#skills', label: t('navSkills') },
-    { href: '#experience', label: t('navExperience') },
-    { href: '#projects', label: t('navProjects') },
-    { href: '#certificates', label: t('navCertificates') },
-    { href: '#honors-awards', label: t('navHonorsAwards') },
-  ];
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -56,17 +69,24 @@ const Header: React.FC<HeaderProps> = ({ theme, onThemeSwitch }) => {
             </a>
           </div>
 
-          {/* Desktop Navigation Links (Apple Style: centered, compact, 12-13px, muted) */}
-          <nav className="hidden lg:flex items-center space-x-6 text-[12px] font-normal tracking-tight">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-[#1d1d1f]/75 dark:text-[#f5f5f7]/75 hover:text-[#0071e3] dark:hover:text-white transition-colors duration-150"
-              >
-                {link.label}
-              </a>
-            ))}
+          {/* Desktop Navigation Links (Apple Style: centered, compact, 12-13px, active state) */}
+          <nav className="hidden lg:flex items-center space-x-6 text-[12px] tracking-tight">
+            {NAV_LINKS.map((link) => {
+              const isActive = activeSection === link.href.replace('#', '');
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className={`transition-colors duration-150 ${
+                    isActive
+                      ? 'text-apple-blue dark:text-apple-bluelight font-semibold'
+                      : 'text-[#1d1d1f]/75 dark:text-[#f5f5f7]/75 hover:text-[#0071e3] dark:hover:text-white font-normal'
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Right Action Icons & Pill Buttons */}
@@ -131,16 +151,23 @@ const Header: React.FC<HeaderProps> = ({ theme, onThemeSwitch }) => {
       {isOpen && (
         <div className="lg:hidden apple-glass border-b border-black/[0.08] dark:border-white/[0.12] transition-all animate-fadeIn">
           <div className="px-6 py-6 space-y-3">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={handleLinkClick}
-                className="block text-base font-medium text-[#1d1d1f] dark:text-[#f5f5f7] hover:text-[#0071e3] transition-colors py-1.5 border-b border-black/[0.04] dark:border-white/[0.04]"
-              >
-                {link.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isActive = activeSection === link.href.replace('#', '');
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={handleLinkClick}
+                  className={`block text-base font-medium py-1.5 border-b border-black/[0.04] dark:border-white/[0.04] transition-colors ${
+                    isActive
+                      ? 'text-apple-blue dark:text-apple-bluelight font-semibold'
+                      : 'text-[#1d1d1f] dark:text-[#f5f5f7] hover:text-[#0071e3]'
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
             <div className="pt-2">
               <a
                 href="#about"

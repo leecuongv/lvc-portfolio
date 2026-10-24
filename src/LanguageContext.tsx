@@ -1,20 +1,9 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import * as constantsEn from './constants';
 import * as constantsVi from './constants_vi';
-import { Project, SkillCategory, Experience, Education, Certificate, Honor } from './types';
+import { Project, SkillCategory, Experience, Education, Certificate, Honor, PersonalInfo } from './types';
 
 export type Language = 'en' | 'vi';
-
-interface PersonalInfo {
-  name: string;
-  title: string;
-  objective: string;
-  email: string;
-  phone: string;
-  github: string;
-  linkedin: string;
-  cvUrl: string;
-}
 
 interface LanguageContextType {
   language: Language;
@@ -185,6 +174,9 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     localStorage.setItem('language', language);
     document.documentElement.lang = language;
+    document.title = language === 'en'
+      ? 'Lê Văn Cường — Software Engineer & Head of ERP'
+      : 'Lê Văn Cường — Kỹ sư Phần mềm & Trưởng bộ phận ERP';
   }, [language]);
 
   const setLanguage = (lang: Language) => {

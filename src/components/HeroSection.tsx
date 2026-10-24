@@ -102,6 +102,10 @@ const HeroSection: React.FC = () => {
                           'https://github.com/leecuongv/gemini-portfolio/blob/main/public/avt.jpg?raw=true';
                       }}
                       alt={personalInfo.name}
+                      width={224}
+                      height={224}
+                      loading="eager"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>

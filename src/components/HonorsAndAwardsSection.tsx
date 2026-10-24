@@ -55,15 +55,15 @@ const HonorsAndAwardsSection: React.FC = () => {
 
           {/* Filter Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
-            {[
-              { id: 'all', label: language === 'en' ? 'All Recognitions' : 'Tất cả' },
-              { id: 'merit', label: language === 'en' ? 'Academic & Merits' : 'Danh hiệu Sinh viên 5 Tốt' },
-              { id: 'leadership', label: language === 'en' ? 'Union & Leadership' : 'Đoàn - Hội & Lãnh đạo' },
-              { id: 'activities', label: language === 'en' ? 'Hackathons & Events' : 'Học thuật & Tình nguyện' },
-            ].map((tab) => (
+            {([
+              { id: 'all' as const, label: language === 'en' ? 'All Recognitions' : 'Tất cả' },
+              { id: 'merit' as const, label: language === 'en' ? 'Academic & Merits' : 'Danh hiệu Sinh viên 5 Tốt' },
+              { id: 'leadership' as const, label: language === 'en' ? 'Union & Leadership' : 'Đoàn - Hội & Lãnh đạo' },
+              { id: 'activities' as const, label: language === 'en' ? 'Hackathons & Events' : 'Học thuật & Tình nguyện' },
+            ]).map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setFilter(tab.id as any)}
+                onClick={() => setFilter(tab.id)}
                 className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
                   filter === tab.id
                     ? 'bg-apple-blue text-white shadow-sm'
