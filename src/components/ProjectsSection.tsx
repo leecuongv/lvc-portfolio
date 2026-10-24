@@ -25,18 +25,19 @@ const ProjectsSection: React.FC = () => {
 
         {/* Flagship Hero Project (Apple Pro Bento Card) */}
         {flagshipProject && (
-          <div className="mb-8 apple-card rounded-3xl p-7 sm:p-10 relative overflow-hidden group">
+          <div className="mb-8 apple-card rounded-3xl p-7 sm:p-9 relative overflow-hidden group">
             {/* Ambient Background Accent */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-blue-500/10 via-cyan-500/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8 space-y-4">
+              {/* Left Column: Project Details */}
+              <div className="lg:col-span-7 space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-apple-blue/10 text-apple-blue dark:bg-apple-blue/20 dark:text-apple-bluelight border border-apple-blue/20">
                     {t('projectsFeaturedBadge')}
                   </span>
                   <span className="text-xs text-[#86868b]">
-                    {language === 'en' ? 'Distributed Backend System' : 'Hệ thống Backend Phân tán'}
+                    {language === 'en' ? 'Distributed Backend Architecture' : 'Kiến trúc Backend Phân tán'}
                   </span>
                 </div>
 
@@ -44,12 +45,12 @@ const ProjectsSection: React.FC = () => {
                   {flagshipProject.title}
                 </h3>
 
-                <p className="text-base text-[#86868b] dark:text-[#a1a1a6] leading-relaxed max-w-2xl">
+                <p className="text-base text-[#86868b] dark:text-[#a1a1a6] leading-relaxed">
                   {flagshipProject.description}
                 </p>
 
                 {/* Tech Badges */}
-                <div className="flex flex-wrap gap-2 pt-2">
+                <div className="flex flex-wrap gap-2 pt-1">
                   {flagshipProject.tags.map((tag) => (
                     <span
                       key={tag}
@@ -59,20 +60,79 @@ const ProjectsSection: React.FC = () => {
                     </span>
                   ))}
                 </div>
+
+                {/* Action Link */}
+                <div className="pt-2">
+                  <a
+                    href={flagshipProject.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="apple-btn-primary !py-2.5 !px-5 !text-xs sm:!text-sm inline-flex items-center gap-2"
+                  >
+                    <i className="fab fa-github text-base"></i>
+                    <span>{t('projectsViewLink')}</span>
+                    <i className="fas fa-arrow-up-right-from-square text-xs opacity-75"></i>
+                  </a>
+                </div>
               </div>
 
-              {/* Action Column */}
-              <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col justify-center items-start lg:items-end gap-3">
-                <a
-                  href={flagshipProject.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="apple-btn-primary !py-3 !px-6 !text-sm w-full sm:w-auto text-center"
-                >
-                  <i className="fab fa-github text-base"></i>
-                  <span>{t('projectsViewLink')}</span>
-                  <i className="fas fa-arrow-up-right-from-square text-xs opacity-75"></i>
-                </a>
+              {/* Right Column: macOS Code Window Terminal Mockup */}
+              <div className="lg:col-span-5">
+                <div className="rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 shadow-xl bg-[#16181d] text-left text-[#f0f6fc]">
+                  {/* macOS Title Bar */}
+                  <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0d1117] border-b border-white/[0.08]">
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
+                    </div>
+                    <div className="text-[11px] font-mono text-[#8b949e] flex items-center gap-1.5">
+                      <i className="fab fa-java text-amber-400"></i>
+                      <span>FarmTelemetryController.java</span>
+                    </div>
+                    <div className="text-[10px] font-mono text-emerald-400 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span>200 OK</span>
+                    </div>
+                  </div>
+
+                  {/* Code Body */}
+                  <div className="p-4 font-mono text-[11px] leading-relaxed overflow-x-auto text-[#c9d1d9] space-y-1">
+                    <div>
+                      <span className="text-purple-400">@RestController</span>
+                    </div>
+                    <div>
+                      <span className="text-purple-400">@RequestMapping</span>
+                      <span className="text-[#79c0ff]">("/api/v1/farms")</span>
+                    </div>
+                    <div>
+                      <span className="text-blue-400">public class</span> <span className="text-yellow-300">FarmTelemetryController</span> {'{'}
+                    </div>
+                    <div className="pl-3 text-[#8b949e]">
+                      // Spring Boot & Redis Telemetry
+                    </div>
+                    <div className="pl-3">
+                      <span className="text-purple-400">@GetMapping</span>
+                      <span className="text-[#79c0ff]">("/{'{'}id{'}'}/telemetry")</span>
+                    </div>
+                    <div className="pl-3">
+                      <span className="text-blue-400">public</span> ResponseEntity&lt;FarmMetrics&gt; <span className="text-yellow-200">pollMetrics</span>(
+                    </div>
+                    <div className="pl-6">
+                      <span className="text-purple-400">@PathVariable</span> String id
+                    </div>
+                    <div className="pl-3">) {'{'}</div>
+                    <div className="pl-6">
+                      <span className="text-blue-400">return</span> ResponseEntity.ok(
+                    </div>
+                    <div className="pl-9 text-emerald-300">
+                      farmCache.getRealtimeMetrics(id)
+                    </div>
+                    <div className="pl-6">);</div>
+                    <div className="pl-3">{'}'}</div>
+                    <div>{'}'}</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

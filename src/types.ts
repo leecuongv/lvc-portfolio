@@ -26,6 +26,7 @@ export interface Experience {
   company: string;
   period: string;
   description: string[];
+  technologies?: string[];
 }
 
 export interface Education {

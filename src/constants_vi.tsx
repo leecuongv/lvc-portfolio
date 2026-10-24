@@ -3,7 +3,7 @@ import { Project, SkillCategory, Experience, Education, Certificate, Honor } fro
 export const PERSONAL_INFO = {
   name: "LÊ VĂN CƯỜNG",
   title: "Kỹ sư Phần mềm",
-  objective: "Đóng góp vào sự phát triển và thành công của công ty nơi tôi làm việc & Nỗ lực trở thành một lập trình viên cao cấp (Senior Developer) trong tương lai.",
+  objective: "Kỹ sư Phần mềm & Trưởng bộ phận ERP giàu kinh nghiệm trong thiết kế kiến trúc hệ thống backend Java/Spring Boot hiệu năng cao, tích hợp hệ thống phân tán và lãnh đạo đội ngũ kỹ thuật. Định hướng kiến tạo các giải pháp chuyển đổi số toàn diện và phát triển lên vị trí Kiến trúc sư Giải pháp (Solution Architect)",
   email: "cuonglevan.work@gmail.com",
   phone: "+84 389 365 835",
   github: "https://github.com/leecuongv",
@@ -121,6 +121,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Trưởng bộ phận ERP",
     company: "Fahasa",
     period: "09/2024 - Hiện tại",
+    technologies: ["Java 21", "Spring Boot", "Redis", "MySQL", "PostgreSQL", "Docker", "ERP Architecture", "Agile/Scrum", "SonarQube"],
     description: [
       "Lãnh đạo và quản lý đội ngũ kỹ sư ERP; chủ trì lập kế hoạch Sprint (Agile/Scrum), phân bổ nhiệm vụ, đánh giá độ phức tạp và duyệt mã (Code Review).",
       "Thiết kế kiến trúc và phát triển các dịch vụ backend cốt lõi bằng Java và Spring Boot, xây dựng các RESTful API và luồng tích hợp dữ liệu hiệu năng cao.",
@@ -134,6 +135,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Lập trình viên Java Backend",
     company: "HPT Vietnam Corporation",
     period: "10/2022 - 08/2024",
+    technologies: ["Java Core", "Enterprise Backend", "CoreBanking Integration", "Digital Signature", "IBM Integration Designer", "Oracle DB"],
     description: [
       "Phát triển hệ thống backend dựa trên Java để xử lý logic nghiệp vụ, lưu trữ tài liệu/dữ liệu và tích hợp với các hệ thống backend khác như CoreBanking, IBM Integration Designer, chữ ký số...",
       "Phân tích tài liệu yêu cầu nghiệp vụ, phối hợp với Chuyên viên phân tích nghiệp vụ (BA) để tư vấn, lựa chọn giải pháp và thiết kế kỹ thuật.",
@@ -144,6 +146,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Thực tập sinh",
     company: "FPT Software",
     period: "07/2022 - 09/2022",
+    technologies: ["C++", "OOP", "Data Structures", "Git", "Agile Fundamentals"],
     description: [
         "Nâng cao kỹ năng lập trình, tham gia các khóa học kỹ năng mềm để nâng cao khả năng giải quyết vấn đề, kỹ năng làm việc nhóm và kỹ năng thuyết trình.",
         "Tham gia vào các dự án giả lập để làm quen với môi trường dự án thực tế."

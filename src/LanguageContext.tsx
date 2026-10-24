@@ -76,6 +76,8 @@ const uiTranslations = {
     aboutLanguage: "Languages",
     aboutCopyEmail: "Copy Email",
     aboutEmailCopied: "Copied!",
+    aboutCopyPhone: "Copy Phone",
+    aboutPhoneCopied: "Copied!",
     aboutOpenRole: "Open to full-time, high-impact engineering roles",
     aboutLocation: "Based in Ho Chi Minh City, Vietnam",
     aboutFluent: "Fluent",
@@ -93,12 +95,14 @@ const uiTranslations = {
     expEyebrow: "CAREER ROADMAP",
     expCurrentRole: "Current Role",
     expAcademicFoundation: "Academic Foundation",
+    expCoreTech: "Core Technologies",
     
     // Projects
     projectsTitle: "Featured Projects",
     projectsSubtitle: "Engineered from the ground up with focus on high concurrency, clean architecture, and data integrity.",
     projectsViewLink: "View Repository",
     projectsFeaturedBadge: "Flagship Architecture",
+    flagshipCodePreview: "Architecture & Controller API",
     
     // Certificates
     certificatesTitle: "Certifications",
@@ -181,6 +185,8 @@ const uiTranslations = {
     aboutLanguage: "Ngoại ngữ",
     aboutCopyEmail: "Sao chép Email",
     aboutEmailCopied: "Đã chép!",
+    aboutCopyPhone: "Sao chép số",
+    aboutPhoneCopied: "Đã chép!",
     aboutOpenRole: "Sẵn sàng cho các cơ hội kỹ thuật toàn thời gian và tạo tác động lớn",
     aboutLocation: "Sinh sống & làm việc tại TP. Hồ Chí Minh, Việt Nam",
     aboutFluent: "Thành thạo",
@@ -198,12 +204,14 @@ const uiTranslations = {
     expEyebrow: "LỘ TRÌNH SỰ NGHIỆP",
     expCurrentRole: "Vị trí hiện tại",
     expAcademicFoundation: "Nền tảng học thuật",
+    expCoreTech: "Công nghệ cốt lõi",
     
     // Projects
     projectsTitle: "Dự án tiêu biểu",
     projectsSubtitle: "Phát triển với sự chú trọng cao vào khả năng chịu tải, kiến trúc sạch và an toàn dữ liệu.",
     projectsViewLink: "Xem mã nguồn",
     projectsFeaturedBadge: "Dự án tiêu biểu",
+    flagshipCodePreview: "Kiến trúc Backend & API Controller",
     
     // Certificates
     certificatesTitle: "Chứng chỉ quốc tế",

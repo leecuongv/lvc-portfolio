@@ -4,7 +4,7 @@ import { Project, SkillCategory, Experience, Education, Certificate, Honor } fro
 export const PERSONAL_INFO = {
   name: "LÊ VĂN CƯỜNG",
   title: "Software Engineer",
-  objective: "Contributing to the development and success of the company where I work & Strive to become a senior developer in the future.",
+  objective: "Dedicated Software Engineer & Head of ERP with proven expertise in architecting high-throughput Java/Spring enterprise backends, distributed caching, and leading cross-functional engineering teams. Passionate about driving business growth through robust system design and advancing toward Solution Architect",
   email: "cuonglevan.work@gmail.com",
   phone: "+84 389 365 835",
   github: "https://github.com/leecuongv",
@@ -122,6 +122,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Head of ERP Department",
     company: "Fahasa",
     period: "09/2024 - Now",
+    technologies: ["Java 21", "Spring Boot", "Redis", "MySQL", "PostgreSQL", "Docker", "ERP Architecture", "Agile/Scrum", "SonarQube"],
     description: [
       "Lead and manage the ERP engineering team; facilitate Agile/Scrum sprint planning, task delegation, backlog grooming, and technical code reviews.",
       "Architect backend enterprise services using Java and Spring Boot, building high-throughput RESTful APIs and reliable system integrations.",
@@ -135,6 +136,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Java Software Developer",
     company: "HPT Vietnam Corporation",
     period: "10/2022 - 08/2024",
+    technologies: ["Java Core", "Enterprise Backend", "CoreBanking Integration", "Digital Signature", "IBM Integration Designer", "Oracle DB"],
     description: [
       "Developed Java-based backend systems to handle business logic, data/document storage, and integration with other backend systems such as CoreBanking, IBM Integration Designer, Digital Signature...",
       "Analyzed business requirements documents, collaborated with business analysts to provide consulting, solution selection, and technical design.",
@@ -145,6 +147,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Internship Trainee",
     company: "FPT Software",
     period: "07/2022 - 09/2022",
+    technologies: ["C++", "OOP", "Data Structures", "Git", "Agile Fundamentals"],
     description: [
         "Deepened programming skills, participated in soft skills courses to improve problem-solving abilities, teamwork skills, and presentation skills.",
         "Engaged in simulated projects to become familiar with real project environments."

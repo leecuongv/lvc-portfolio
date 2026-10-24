@@ -3,12 +3,21 @@ import { useLanguage } from '../LanguageContext';
 
 const AboutSection: React.FC = () => {
   const { personalInfo, softSkills, languages, t } = useLanguage();
-  const [copied, setCopied] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const [copiedPhone, setCopiedPhone] = useState(false);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(personalInfo.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2000);
+  };
+
+  const handleCopyPhone = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigator.clipboard.writeText(personalInfo.phone.replace(/\s+/g, ''));
+    setCopiedPhone(true);
+    setTimeout(() => setCopiedPhone(false), 2000);
   };
 
   return (
@@ -52,8 +61,8 @@ const AboutSection: React.FC = () => {
                   className="apple-btn-secondary !py-1.5 !px-3.5 !text-xs !font-medium"
                   title="Copy email to clipboard"
                 >
-                  <i className={`fas ${copied ? 'fa-check text-emerald-500' : 'fa-copy'}`}></i>
-                  <span>{copied ? t('aboutEmailCopied') : t('aboutCopyEmail')}</span>
+                  <i className={`fas ${copiedEmail ? 'fa-check text-emerald-500' : 'fa-copy'}`}></i>
+                  <span>{copiedEmail ? t('aboutEmailCopied') : t('aboutCopyEmail')}</span>
                 </button>
               </div>
 
@@ -73,19 +82,30 @@ const AboutSection: React.FC = () => {
                   </div>
                 </a>
 
-                {/* Phone */}
-                <a
-                  href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}
-                  className="p-4 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06] hover:border-apple-blue/40 transition-all group"
-                >
-                  <div className="text-xs text-[#86868b] font-medium flex items-center gap-2">
-                    <i className="fas fa-phone text-emerald-500"></i>
-                    <span>Phone</span>
+                {/* Phone & Zalo */}
+                <div className="p-4 rounded-2xl bg-black/[0.02] dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.06] hover:border-apple-blue/40 transition-all flex flex-col justify-between group">
+                  <div className="flex items-center justify-between">
+                    <div className="text-xs text-[#86868b] font-medium flex items-center gap-2">
+                      <i className="fas fa-phone text-emerald-500"></i>
+                      <span>Phone / Zalo</span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={handleCopyPhone}
+                      className="text-[11px] font-medium text-apple-blue hover:text-apple-bluehover transition-colors flex items-center gap-1"
+                      title="Copy phone number"
+                    >
+                      <i className={`fas ${copiedPhone ? 'fa-check text-emerald-500' : 'fa-copy'} text-[10px]`}></i>
+                      <span>{copiedPhone ? t('aboutPhoneCopied') : t('aboutCopyPhone')}</span>
+                    </button>
                   </div>
-                  <div className="text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1 group-hover:text-apple-blue transition-colors">
+                  <a
+                    href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}
+                    className="block text-sm font-semibold text-[#1d1d1f] dark:text-white mt-1 group-hover:text-apple-blue transition-colors"
+                  >
                     {personalInfo.phone}
-                  </div>
-                </a>
+                  </a>
+                </div>
 
                 {/* GitHub */}
                 <a

@@ -8,6 +8,7 @@ import CertificatesSection from './src/components/CertificatesSection';
 import HonorsAndAwardsSection from './src/components/HonorsAndAwardsSection';
 import AboutSection from './src/components/AboutSection';
 import Footer from './src/components/Footer';
+import BackToTop from './src/components/BackToTop';
 import { LanguageProvider } from './src/LanguageContext';
 
 const App: React.FC = () => {
@@ -47,6 +48,7 @@ const App: React.FC = () => {
         </main>
 
         <Footer />
+        <BackToTop />
       </div>
     </LanguageProvider>
   );

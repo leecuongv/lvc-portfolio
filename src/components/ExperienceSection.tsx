@@ -74,6 +74,26 @@ const ExperienceSection: React.FC = () => {
                       </li>
                     ))}
                   </ul>
+
+                  {/* Tech stack pills */}
+                  {exp.technologies && exp.technologies.length > 0 && (
+                    <div className="mt-6 pt-4 border-t border-black/[0.05] dark:border-white/[0.06]">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-[#86868b] mr-1.5 flex items-center gap-1">
+                          <i className="fas fa-layer-group text-[10px] text-apple-blue"></i>
+                          <span>{t('expCoreTech')}:</span>
+                        </span>
+                        {exp.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-black/[0.03] dark:bg-white/[0.05] text-[#1d1d1f] dark:text-[#f5f5f7] border border-black/[0.05] dark:border-white/[0.08] hover:border-apple-blue/30 transition-colors"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             );
