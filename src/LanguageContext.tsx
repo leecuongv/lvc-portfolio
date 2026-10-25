@@ -44,7 +44,7 @@ const uiTranslations = {
     heroViewWork: "Explore Projects",
     heroDownloadCv: "Download CV",
     heroContactMe: "Get in touch",
-    heroOpenToWork: "Open to Senior Backend Roles",
+    heroOpenToWork: "Open to Senior & Technical Leadership Roles",
 
     // Hero Spec Sheet
     heroSpecHeader: "SYSTEM ARCHITECTURE & CORE SPEC",
@@ -56,13 +56,13 @@ const uiTranslations = {
     heroSpecDbTitle: "Database & Caching",
     heroSpecEduTitle: "Education & Honors",
     heroSpecEduDegree: "HCMUTE (GPA 3.2/4)",
-    heroSpecEduAward: "3x Student with 5 Merits",
+    heroSpecEduAward: "3x Consecutive Student with 5 Merits",
 
     // Bento stats
     bentoRoleTitle: "Head of ERP",
     bentoRoleSub: "Ho Chi Minh City Book Distribution Corporation - FAHASA",
-    bentoExpTitle: "3+ Years",
-    bentoExpSub: "Production Engineering",
+    bentoExpTitle: "4+ Years",
+    bentoExpSub: "Enterprise Engineering",
     bentoStackTitle: "Java & Spring",
     bentoStackSub: "Microservices & Cloud",
     bentoEduTitle: "HCMUTE",
@@ -70,7 +70,7 @@ const uiTranslations = {
 
     // About
     aboutTitle: "About Me",
-    aboutSubtitle: "Bridging complex business processes with high-throughput, maintainable software architectures.",
+    aboutSubtitle: "Combining strategic business acumen with resilient, high-throughput, and clean software architectures.",
     aboutContact: "Direct Channels",
     aboutSoftSkills: "Core Competencies",
     aboutLanguage: "Languages",
@@ -78,7 +78,7 @@ const uiTranslations = {
     aboutEmailCopied: "Copied!",
     aboutCopyPhone: "Copy Phone",
     aboutPhoneCopied: "Copied!",
-    aboutOpenRole: "Open to full-time, high-impact engineering roles",
+    aboutOpenRole: "Available for high-impact technical leadership and senior engineering opportunities",
     aboutLocation: "Based in Ho Chi Minh City, Vietnam",
     aboutFluent: "Fluent",
     
@@ -99,21 +99,21 @@ const uiTranslations = {
     
     // Projects
     projectsTitle: "Featured Projects",
-    projectsSubtitle: "Engineered from the ground up with focus on high concurrency, clean architecture, and data integrity.",
+    projectsSubtitle: "Engineered to rigorous standards of scalability, clean architecture, and mission-critical reliability.",
     projectsViewLink: "View Repository",
     projectsFeaturedBadge: "Flagship Architecture",
     flagshipCodePreview: "Architecture & Controller API",
     
     // Certificates
     certificatesTitle: "Certifications",
-    certificatesSubtitle: "Industry-standard cloud and project management credentials.",
+    certificatesSubtitle: "Internationally recognized credentials in cloud architecture and professional project management.",
     certificatesVerify: "Verify Credential",
     certEyebrow: "ACCREDITATIONS & CLOUD",
     certVerified: "Verified Credential",
     
     // Honors & Awards
     honorsTitle: "Honors & Recognition",
-    honorsSubtitle: "Academic excellence, community leadership, and competitive distinctions.",
+    honorsSubtitle: "Recognitions for academic excellence, student association leadership, and competitive distinctions.",
     honorsViewProof: "View Proof",
     honorsEyebrow: "RECOGNITION & IMPACT",
     honorsVerified: "Verified Activity",
@@ -153,7 +153,7 @@ const uiTranslations = {
     heroViewWork: "Xem dự án",
     heroDownloadCv: "Tải CV",
     heroContactMe: "Liên hệ ngay",
-    heroOpenToWork: "Sẵn sàng cho cơ hội Senior Backend",
+    heroOpenToWork: "Sẵn sàng đón nhận cơ hội Kỹ thuật Cấp cao & Lãnh đạo",
 
     // Hero Spec Sheet
     heroSpecHeader: "KIẾN TRÚC HỆ THỐNG & THÔNG SỐ CỐT LÕI",
@@ -165,13 +165,13 @@ const uiTranslations = {
     heroSpecDbTitle: "Cơ sở dữ liệu & Caching",
     heroSpecEduTitle: "Học vấn & Thành tích",
     heroSpecEduDegree: "ĐH SPKT TP.HCM (GPA 3.2/4)",
-    heroSpecEduAward: "3 Năm liền Sinh viên 5 Tốt",
+    heroSpecEduAward: "3 Năm liên tiếp đạt Sinh viên 5 Tốt",
 
     // Bento stats
     bentoRoleTitle: "Trưởng bộ phận ERP",
     bentoRoleSub: "Công ty Cổ phần Phát hành sách Thành phố Hồ Chí Minh - FAHASA",
-    bentoExpTitle: "3+ Năm",
-    bentoExpSub: "Kỹ sư thực chiến",
+    bentoExpTitle: "4+ Năm",
+    bentoExpSub: "Kinh nghiệm Chuyên môn",
     bentoStackTitle: "Java & Spring",
     bentoStackSub: "Microservices & Cloud",
     bentoEduTitle: "HCMUTE",
@@ -179,7 +179,7 @@ const uiTranslations = {
 
     // About
     aboutTitle: "Giới thiệu bản thân",
-    aboutSubtitle: "Kết hợp tư duy nghiệp vụ doanh nghiệp với kiến trúc phần mềm hiệu năng cao và dễ bảo trì.",
+    aboutSubtitle: "Kết hợp tư duy chiến lược nghiệp vụ doanh nghiệp cùng năng lực kiến trúc phần mềm hiệu năng cao và mở rộng bền vững.",
     aboutContact: "Thông tin liên hệ",
     aboutSoftSkills: "Kỹ năng cốt lõi",
     aboutLanguage: "Ngoại ngữ",
@@ -187,7 +187,7 @@ const uiTranslations = {
     aboutEmailCopied: "Đã chép!",
     aboutCopyPhone: "Sao chép số",
     aboutPhoneCopied: "Đã chép!",
-    aboutOpenRole: "Sẵn sàng cho các cơ hội kỹ thuật toàn thời gian và tạo tác động lớn",
+    aboutOpenRole: "Sẵn sàng kết nối và hợp tác cho các vị trí kỹ thuật cấp cao tạo tác động lớn",
     aboutLocation: "Sinh sống & làm việc tại TP. Hồ Chí Minh, Việt Nam",
     aboutFluent: "Thành thạo",
     
@@ -200,7 +200,7 @@ const uiTranslations = {
     
     // Experience & Education
     experienceTitle: "Hành trình sự nghiệp",
-    experienceSubtitle: "Dấu ấn phát triển qua các vị trí kỹ thuật nòng cốt và hệ thống trọng yếu.",
+    experienceSubtitle: "Hành trình cống hiến và khẳng định năng lực qua các vị trí kỹ thuật nòng cốt, dẫn dắt hệ thống vận hành trọng yếu.",
     expEyebrow: "LỘ TRÌNH SỰ NGHIỆP",
     expCurrentRole: "Vị trí hiện tại",
     expAcademicFoundation: "Nền tảng học thuật",
@@ -208,21 +208,21 @@ const uiTranslations = {
     
     // Projects
     projectsTitle: "Dự án tiêu biểu",
-    projectsSubtitle: "Phát triển với sự chú trọng cao vào khả năng chịu tải, kiến trúc sạch và an toàn dữ liệu.",
+    projectsSubtitle: "Được kiến tạo với tiêu chuẩn kỹ thuật nghiêm ngặt về khả năng mở rộng, kiến trúc sạch và độ tin cậy dữ liệu.",
     projectsViewLink: "Xem mã nguồn",
     projectsFeaturedBadge: "Dự án tiêu biểu",
     flagshipCodePreview: "Kiến trúc Backend & API Controller",
     
     // Certificates
     certificatesTitle: "Chứng chỉ quốc tế",
-    certificatesSubtitle: "Chứng nhận chuyên môn về điện toán đám mây và quản lý dự án.",
+    certificatesSubtitle: "Chứng chỉ quốc tế khẳng định năng lực chuyên môn trong kiến trúc đám mây và quản trị dự án chuyên nghiệp.",
     certificatesVerify: "Xác minh chứng chỉ",
     certEyebrow: "CHỨNG NHẬN & ĐIỆN TOÁN ĐÁM MÂY",
     certVerified: "Chứng chỉ đã xác thực",
     
     // Honors & Awards
     honorsTitle: "Giải thưởng & Hoạt động",
-    honorsSubtitle: "Ghi nhận thành tích học tập xuất sắc, công tác Đoàn - Hội và các phong trào học thuật.",
+    honorsSubtitle: "Ghi nhận thành tích học thuật xuất sắc, dấu ấn tiên phong trong công tác Đoàn - Hội và các phong trào nghiên cứu, học thuật.",
     honorsViewProof: "Xem minh chứng",
     honorsEyebrow: "THÀNH TÍCH & ĐÓNG GÓP",
     honorsVerified: "Hoạt động đã xác nhận",

@@ -11,7 +11,17 @@ const HonorsAndAwardsSection: React.FC = () => {
     const lowerTitle = item.title.toLowerCase();
     const lowerContext = item.context.toLowerCase();
     if (filter === 'merit') {
-      return lowerTitle.includes('merit') || lowerTitle.includes('5 tốt') || lowerTitle.includes('xuất sắc');
+      return (
+        lowerTitle.includes('merit') ||
+        lowerTitle.includes('5 tốt') ||
+        lowerTitle.includes('xuất sắc') ||
+        lowerTitle.includes('ưu tú') ||
+        lowerTitle.includes('tiêu biểu') ||
+        lowerTitle.includes('tiên tiến') ||
+        lowerTitle.includes('exemplar') ||
+        lowerContext.includes('5 tốt') ||
+        lowerContext.includes('merit')
+      );
     }
     if (filter === 'leadership') {
       return (
@@ -20,7 +30,14 @@ const HonorsAndAwardsSection: React.FC = () => {
         lowerTitle.includes('cán bộ') ||
         lowerTitle.includes('leadership') ||
         lowerTitle.includes('collaborator') ||
-        lowerTitle.includes('cộng tác viên')
+        lowerTitle.includes('cộng tác viên') ||
+        lowerTitle.includes('trưởng ban') ||
+        lowerTitle.includes('head of') ||
+        lowerTitle.includes('ủy viên') ||
+        lowerTitle.includes('chỉ đạo') ||
+        lowerTitle.includes('steering') ||
+        lowerContext.includes('lãnh đạo') ||
+        lowerContext.includes('ban chấp hành')
       );
     }
     if (filter === 'activities') {
@@ -29,8 +46,16 @@ const HonorsAndAwardsSection: React.FC = () => {
         lowerTitle.includes('tình nguyện') ||
         lowerTitle.includes('cuộc thi') ||
         lowerTitle.includes('hackathon') ||
+        lowerTitle.includes('ban tổ chức') ||
+        lowerTitle.includes('organizing') ||
+        lowerTitle.includes('workshop') ||
+        lowerTitle.includes('sáng kiến') ||
+        lowerTitle.includes('chuyển đổi số') ||
+        lowerTitle.includes('contest') ||
+        lowerTitle.includes('open day') ||
         lowerContext.includes('contest') ||
-        lowerContext.includes('hackathon')
+        lowerContext.includes('hackathon') ||
+        lowerContext.includes('tình nguyện')
       );
     }
     return true;
@@ -57,9 +82,9 @@ const HonorsAndAwardsSection: React.FC = () => {
           <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
             {([
               { id: 'all' as const, label: language === 'en' ? 'All Recognitions' : 'Tất cả' },
-              { id: 'merit' as const, label: language === 'en' ? 'Academic & Merits' : 'Danh hiệu Sinh viên 5 Tốt' },
+              { id: 'merit' as const, label: language === 'en' ? 'Honors & Distinctions' : 'Danh hiệu & Khen thưởng' },
               { id: 'leadership' as const, label: language === 'en' ? 'Union & Leadership' : 'Đoàn - Hội & Lãnh đạo' },
-              { id: 'activities' as const, label: language === 'en' ? 'Hackathons & Events' : 'Học thuật & Tình nguyện' },
+              { id: 'activities' as const, label: language === 'en' ? 'Competitions & Initiatives' : 'Cuộc thi & Sáng kiến' },
             ]).map((tab) => (
               <button
                 key={tab.id}
