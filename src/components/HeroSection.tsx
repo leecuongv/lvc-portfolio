@@ -96,10 +96,10 @@ const HeroSection: React.FC = () => {
                   {/* Avatar Container */}
                   <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-[28px] overflow-hidden bg-black/5 dark:bg-white/5 border-2 border-black/[0.08] dark:border-white/[0.15] shadow-2xl">
                     <img
-                      src={`${import.meta.env.BASE_URL}avt.jpg`}
+                      src={`${import.meta.env.BASE_URL}AVT2.JPG`}
                       onError={(e) => {
                         (e.target as HTMLImageElement).src =
-                          'https://github.com/leecuongv/gemini-portfolio/blob/main/public/avt.jpg?raw=true';
+                          'https://github.com/leecuongv/gemini-portfolio/blob/main/public/AVT2.JPG?raw=true';
                       }}
                       alt={personalInfo.name}
                       width={224}

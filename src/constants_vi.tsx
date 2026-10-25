@@ -3,7 +3,7 @@ import { Project, SkillCategory, Experience, Education, Certificate, Honor } fro
 export const PERSONAL_INFO = {
   name: "LÊ VĂN CƯỜNG",
   title: "Kỹ sư Phần mềm",
-  objective: "Kỹ sư Phần mềm & Trưởng bộ phận ERP với hơn 4 năm kinh nghiệm chuyên sâu trong thiết kế kiến trúc hệ thống backend Java/Spring Boot hiệu năng cao, tích hợp hệ sinh thái phân tán và lãnh đạo đội ngũ kỹ thuật. Kiên định với mục tiêu kiến tạo các giải pháp chuyển đổi số toàn diện, tối ưu hóa năng suất vận hành doanh nghiệp và phát triển lên vị trí Kiến trúc sư Giải pháp (Solution Architect) / Giám đốc Kỹ thuật (Technical Lead).",
+  objective: "Kỹ sư Phần mềm & Trưởng bộ phận ERP với hơn 4 năm kinh nghiệm chuyên sâu trong thiết kế kiến trúc hệ thống backend Java/Spring Boot hiệu năng cao, tích hợp hệ sinh thái phân tán và lãnh đạo đội ngũ kỹ thuật. Kiên định với mục tiêu kiến tạo các giải pháp chuyển đổi số toàn diện, tối ưu hóa năng suất vận hành doanh nghiệp và phát triển lên vị trí Kiến trúc sư Giải pháp (Solution Architect).",
   email: "cuonglevan.work@gmail.com",
   phone: "+84 389 365 835",
   github: "https://github.com/leecuongv",

@@ -32,7 +32,7 @@
 
 ```
 lvc-portfolio/
-├── public/                 # Static assets (Optimized avt.jpg, custom favicon.svg)
+├── public/                 # Static assets (Optimized AVT2.JPG, custom favicon.svg)
 ├── src/
 │   ├── components/         # Modular Apple Bento components
 │   │   ├── Header.tsx      # Frosted glass nav, active scrollspy, theme/lang controls
